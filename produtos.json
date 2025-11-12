@@ -1,46 +1,75 @@
 [
-  {
-    "id": "p01",
-    "name": "Caixa para Deck de Commander - Spellbook",
-    "img": "imagens/spellbook.webp",
-    "desc": "A caixa acomoda o seguinte: Zona de Comando que exibe seu Comandante como parte da capa do livro, 100 cartas com sleeves, 50 cartas/tokens sem sleeve ou 20-30 com sleeve, 16x D6 (dados de 16mm), 6x D20 (dados de 22mm) e 4 canetas para quadro branco.",
-    "size": "15 cm",
-    "material": "pla",
-    "category": "MTG",
-    "tags": ["mtg", "deckbox"],
-    "price": "R$120.00"
-  },
-  {
-    "id": "p02",
-    "name": "Kit Definitivo para Jogadores de DND",
-    "img": "imagens/Kit Definitivo para Jogadores de DND.webp",
-    "desc": "Portas com rastreadores para tudo o que você precisa para uma sessão completa de D&D, sem ficha de personagem extra, tudo pronto para usar, configurado em 6 segundos.",
-    "size": "10cm",
-    "material": "pla",
-    "category": "RPG",
-    "tags": ["rpg", "deckbox"],
-    "price": "R$120.00"
-  },
-  {
-    "id": "p03",
-    "name": "Caixa de Deck MTG Commander com Sideboard",
-    "img": "imagens/Caixa de Deck MTG Commander com Sideboard.webp",
-    "desc": "Caixa para Deck de MTG. O formato comporta facilmente mais de 100 cards com sleeves e também possui um compartimento lateral para tokens, dados, contadores de vida e etcs",
-    "size": "25 cm",
-    "material": "pla",
-    "category": "MTG",
-    "tags": ["mtg", "deckbox"],
-    "price": "R$70.00"
-  },
-  {
-    "id": "p04",
-    "name": "Conjunto de dados - D20, D12, D10, D8, D6, D4",
-    "img": "imagens/Conjunto de dados - D20, D12, D10, D8, D6, D4.webp",
-    "desc": "Escolha o dado (d20, d12, d10, d8, d6, d4), escolha o tipo de gráfico (em relevo ou nivelado) e escolha a cor que mais combina com você. R$2,50 a unidade ou R$12,00 o conjunto",
-    "size": "30 mm",
-    "material": "pla",
-    "category": "RPG",
-    "tags": ["rpg", "dado", "mtg"],
-    "price": "R$2.50 a unidade ou R$12.00 o conjunto"
-  }
+    {
+        "id": "p01",
+        "name": "Caixa para Deck de Commander - Spellbook",
+        "images": [
+            "imagens/p01/1.webp",
+            "imagens/p01/2.webp",
+            "imagens/p01/3.webp"
+        ],
+        "desc": "A caixa acomoda o seguinte: Zona de Comando que exibe seu Comandante como parte da capa do livro, 100 cartas com sleeves, 50 cartas/tokens sem sleeve ou 20-30 com sleeve, 16x D6 (dados de 16mm), 6x D20 (dados de 22mm) e 4 canetas para quadro branco.",
+        "size": "15 cm",
+        "material": "pla",
+        "category": "MTG",
+        "tags": [
+            "mtg",
+            "deckbox"
+        ],
+        "price": "R$120.00"
+    },
+    {
+        "id": "p02",
+        "name": "Kit Definitivo para Jogadores de DND",
+        "images": [
+            "imagens/p02/1.webp",
+            "imagens/p02/2.webp",
+            "imagens/p02/3.webp"
+        ],
+        "desc": "Portas com rastreadores para tudo o que você precisa para uma sessão completa de D&D, sem ficha de personagem extra, tudo pronto para usar, configurado em 6 segundos",
+        "size": "10cm",
+        "material": "pla",
+        "category": "RPG",
+        "tags": [
+            "rpg",
+            "deckbox"
+        ],
+        "price": "R$120.00"
+    },
+    {
+        "id": "p03",
+        "name": "Caixa de Deck MTG Commander com Sideboard",
+        "images": [
+            "imagens/p03/1.webp",
+            "imagens/p03/2.webp",
+            "imagens/p03/3.webp"
+        ],
+        "desc": "Caixa para Deck de MTG. O formato comporta facilmente mais de 100 cards com sleeves e também possui um compartimento lateral para tokens, dados, contadores de vida e etcs",
+        "size": "25 cm",
+        "material": "pla",
+        "category": "MTG",
+        "tags": [
+            "mtg",
+            "deckbox"
+        ],
+        "price": "R$70.00"
+    },
+    {
+        "id": "p04",
+        "name": "Conjunto de dados - D20, D12, D10, D8, D6, D4",
+        "images": [
+            "imagens/p04/1.webp",
+            "imagens/p04/2.webp",
+            "imagens/p04/3.webp"
+        ],
+        "desc": "Escolha o dado (d20, d12, d10, d8, d6, d4), escolha o tipo de gráfico (em relevo ou nivelado) e escolha a cor que mais combina com você.",
+        "size": "30 mm",
+        "material": "pla",
+        "category": "RPG",
+        "tags": [
+            "rpg",
+            "dado",
+            "mtg"
+        ],
+        "price": "R$2.50 a unidade ou R$12.00 o conjunto"
+    }
 ]

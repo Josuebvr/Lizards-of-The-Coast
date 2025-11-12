@@ -2,533 +2,712 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Soir Alliv — Portfólio Impressão 3D</title>
-  <meta name="description" content="Portfólio de produtos de impressão 3D — Soir Alliv">
-  <style>
-    :root {
-      --bg: #ffffff;
-      --text: #111;
-      --muted: #666;
-      --accent: #f97316;
-      --radius: 14px;
-      --maxw: 1200px;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto;
-    }
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Soir Alliv — Portfólio Impressão 3D</title>
+    <meta name="description" content="Portfólio de produtos de impressão 3D — Soir Alliv">
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #111;
+            --muted: #666;
+            --accent: #f97316;
+            --radius: 14px;
+            --maxw: 1200px;
+            font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto;
+        }
 
-    body {
-      margin: 0;
-      background: linear-gradient(180deg, #fff 0%, #fff6f0 100%);
-      color: var(--text);
-      line-height: 1.5;
-      display: flex;
-      justify-content: center;
-      padding: 40px 20px;
-    }
+        body {
+            margin: 0;
+            background: linear-gradient(180deg, #fff 0%, #fff6f0 100%);
+            color: var(--text);
+            line-height: 1.5;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
 
-    .wrap {
-      width: 100%;
-      max-width: var(--maxw);
-    }
+        .wrap {
+            width: 100%;
+            max-width: var(--maxw);
+        }
 
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 18px 22px;
-      margin-bottom: 28px;
-      border-radius: var(--radius);
-      background: #fff;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px 22px;
+            margin-bottom: 28px;
+            border-radius: var(--radius);
+            background: #fff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
 
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 14px
-    }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 14px
+        }
 
-    .logo {
-      width: 56px;
-      height: 56px;
-      border-radius: 12px;
-      background: linear-gradient(135deg, var(--accent), #ffb77a);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      color: white;
-      font-size: 20px;
-      font-family: Georgia, serif;
-    }
+        .logo {
+            width: 56px;
+            height: 56px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--accent), #ffb77a);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: white;
+            font-size: 20px;
+            font-family: Georgia, serif;
+        }
 
-    .brand h1 {
-      margin: 0;
-      font-size: 20px;
-      color: var(--text)
-    }
+        .brand h1 {
+            margin: 0;
+            font-size: 20px;
+            color: var(--text)
+        }
 
-    .brand p {
-      margin: 0;
-      font-size: 13px;
-      color: var(--muted)
-    }
+        .brand p {
+            margin: 0;
+            font-size: 13px;
+            color: var(--muted)
+        }
 
-    nav {
-      display: flex;
-      gap: 12px;
-      align-items: center
-    }
+        nav {
+            display: flex;
+            gap: 12px;
+            align-items: center
+        }
 
-    nav a {
-      color: var(--text);
-      text-decoration: none;
-      font-size: 14px;
-      padding: 8px 12px;
-      border-radius: 8px
-    }
+        nav a {
+            color: var(--text);
+            text-decoration: none;
+            font-size: 14px;
+            padding: 8px 12px;
+            border-radius: 8px
+        }
 
-    nav a.cta {
-      background: var(--accent);
-      color: #fff;
-    }
+        nav a.cta {
+            background: var(--accent);
+            color: #fff;
+        }
 
-    nav .cart-btn {
-      position: relative;
-      background: none;
-      border: none;
-      cursor: pointer;
-      font-size: 20px;
-    }
+        nav .cart-btn {
+            position: relative;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+        }
 
-    nav .cart-count {
-      position: absolute;
-      top: -5px;
-      right: -10px;
-      background: var(--accent);
-      color: #fff;
-      font-size: 12px;
-      border-radius: 999px;
-      padding: 2px 6px;
-    }
+        nav .cart-count {
+            position: absolute;
+            top: -5px;
+            right: -10px;
+            background: var(--accent);
+            color: #fff;
+            font-size: 12px;
+            border-radius: 999px;
+            padding: 2px 6px;
+        }
 
-    main {
-      display: grid;
-      gap: 30px
-    }
+        main {
+            display: grid;
+            gap: 30px
+        }
 
-    .hero {
-      background: #fff;
-      border-radius: var(--radius);
-      padding: 36px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-      text-align: center;
-    }
+        .hero {
+            background: #fff;
+            border-radius: var(--radius);
+            padding: 36px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
 
-    .hero h2 {
-      margin: 0;
-      font-size: 26px;
-    }
+        .hero h2 {
+            margin: 0;
+            font-size: 26px;
+        }
 
-    .hero p {
-      color: var(--muted);
-      margin-top: 12px;
-      font-size: 16px;
-      max-width: 720px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+        .hero p {
+            color: var(--muted);
+            margin-top: 12px;
+            font-size: 16px;
+            max-width: 720px;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-    .actions {
-      margin-top: 22px;
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+        .actions {
+            margin-top: 22px;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
 
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 10px 16px;
-      border-radius: 12px;
-      border: 0;
-      cursor: pointer;
-      font-weight: 600;
-    }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 16px;
+            border-radius: 12px;
+            border: 0;
+            cursor: pointer;
+            font-weight: 600;
+        }
 
-    .btn.primary {
-      background: var(--accent);
-      color: #fff;
-    }
+        .btn.primary {
+            background: var(--accent);
+            color: #fff;
+        }
 
-    .btn.secondary {
-      background: #fff;
-      border: 1px solid var(--accent);
-      color: var(--accent);
-    }
+        .btn.secondary {
+            background: #fff;
+            border: 1px solid var(--accent);
+            color: var(--accent);
+        }
 
-    .filters {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-bottom: 18px;
-      align-items: center;
-      background: #fff;
-      padding: 12px 18px;
-      border-radius: var(--radius);
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-    }
+        .filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 18px;
+            align-items: center;
+            background: #fff;
+            padding: 12px 18px;
+            border-radius: var(--radius);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
 
-    .filters select,
-    .filters input {
-      padding: 8px 10px;
-      border-radius: 8px;
-      border: 1px solid #ddd;
-      font-size: 14px;
-    }
+        .filters select,
+        .filters input {
+            padding: 8px 10px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+        }
 
-    .catalog {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 18px
-    }
+        .catalog {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 18px
+        }
 
-    .card {
-      background: #fff;
-      border-radius: var(--radius);
-      padding: 12px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-      transition: transform .2s ease;
-    }
+        .card {
+            background: #fff;
+            border-radius: var(--radius);
+            padding: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            transition: transform .2s ease;
+        }
 
-    .card:hover {
-      transform: translateY(-6px);
-    }
+        .card:hover {
+            transform: translateY(-6px);
+        }
 
-    .card img {
-      width: 100%;
-      border-radius: 8px;
-      object-fit: cover;
-      aspect-ratio: 1.2/1;
-    }
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+            object-fit: cover;
+            aspect-ratio: 1.2/1;
+        }
 
-    .card h3 {
-      margin: 10px 0 4px 0;
-      font-size: 16px
-    }
+        .card h3 {
+            margin: 10px 0 4px 0;
+            font-size: 16px
+        }
 
-    .card p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 13px
-    }
+        .card p {
+            margin: 0;
+            color: var(--muted);
+            font-size: 13px
+        }
 
-    .meta {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: 10px;
-      flex-wrap: wrap;
-    }
+        .meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
 
-    .chip {
-      padding: 5px 8px;
-      border-radius: 999px;
-      font-size: 12px;
-      background: rgba(249, 115, 22, 0.1);
-      color: var(--accent);
-    }
+        .chip {
+            padding: 5px 8px;
+            border-radius: 999px;
+            font-size: 12px;
+            background: rgba(249, 115, 22, 0.1);
+            color: var(--accent);
+        }
 
-    footer {
-      margin-top: 40px;
-      padding: 18px;
-      border-radius: var(--radius);
-      background: #fff;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-      text-align: center;
-      font-size: 14px;
-      color: var(--muted);
-    }
+        footer {
+            margin-top: 40px;
+            padding: 18px;
+            border-radius: var(--radius);
+            background: #fff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            font-size: 14px;
+            color: var(--muted);
+        }
 
-    .modal {
-      position: fixed;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.6);
-      display: none;
-      align-items: center;
-      justify-content: center;
-      z-index: 50;
-      padding: 20px;
-      overflow-y: auto;
-    }
+        .modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.6);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 50;
+            padding: 20px;
+            overflow-y: auto;
+        }
 
-    .modal.show {
-      display: flex;
-    }
+        .modal.show {
+            display: flex;
+        }
 
-    .modal .box {
-      background: #fff;
-      border-radius: var(--radius);
-      padding: 20px;
-      width: 100%;
-      max-width: 480px;
-      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
-      animation: fadeIn 0.25s ease;
-    }
+        .modal .box {
+            background: #fff;
+            border-radius: var(--radius);
+            padding: 20px;
+            width: 100%;
+            max-width: 480px;
+            box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+            animation: fadeIn 0.25s ease;
+        }
 
-    .modal img {
-      width: 100%;
-      border-radius: 8px;
-      margin-bottom: 12px;
-      object-fit: cover;
-      max-height: 280px;
-    }
+        .modal img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            object-fit: cover;
+            max-height: 280px;
+        }
 
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: scale(0.95);
-      }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
 
-      to {
-        opacity: 1;
-        transform: scale(1);
-      }
-    }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
 
-    @media (max-width: 600px) {
-      .modal .box {
-        padding: 16px;
-        max-width: 90%;
-      }
+        @media (max-width: 600px) {
+            .modal .box {
+                padding: 16px;
+                max-width: 90%;
+            }
 
-      .modal img {
-        max-height: 200px;
-      }
-    }
-  </style>
+            .modal img {
+                max-height: 200px;
+            }
+        }
+
+        .carousel {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border-radius: 10px;
+            margin-bottom: 14px;
+        }
+
+        .carousel img {
+            width: 100%;
+            border-radius: 8px;
+            object-fit: cover;
+            max-height: 280px;
+            transition: opacity 0.3s ease;
+        }
+
+        .carousel button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.8);
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            padding: 6px 12px;
+            border-radius: 50%;
+            color: var(--accent);
+            transition: background 0.2s;
+        }
+
+        .carousel button:hover {
+            background: rgba(255, 255, 255, 1);
+        }
+
+        .carousel .prev {
+            left: 10px;
+        }
+
+        .carousel .next {
+            right: 10px;
+        }
+
+        /* Card-specific (compact) carousel */
+        .card .carousel {
+            max-height: 180px;
+            margin-bottom: 12px;
+        }
+
+        .card .carousel img {
+            max-height: 160px;
+        }
+
+        .card .carousel button {
+            font-size: 18px;
+            padding: 4px 8px;
+        }
+    </style>
 </head>
 
 <body>
-  <div class="wrap">
-    <header>
-      <div class="brand">
-        <div class="logo"></div>
-        <div>
-          <h1>Soir Alliv</h1>
-          <p>Portfólio de Impressões 3D</p>
-        </div>
-      </div>
-      <nav>
-        <a href="#catalog" class="cta">Catálogo</a>
-        <button class="cart-btn" id="openCart">🛒<span class="cart-count" id="cartCount">0</span></button>
-      </nav>
-    </header>
+    <div class="wrap">
+        <header>
+            <div class="brand">
+                <div class="logo"></div>
+                <div>
+                    <h1>Soir Alliv</h1>
+                    <p>Portfólio de Impressões 3D</p>
+                </div>
+            </div>
+            <nav>
+                <a href="#catalog" class="cta">Catálogo</a>
+                <button class="cart-btn" id="openCart">🛒<span class="cart-count" id="cartCount">0</span></button>
+            </nav>
+        </header>
 
-    <main>
-      <section class="hero"> 
-        <h2>Seja muito bem-vindo a Soir Alliv</h2> 
-        <p> É um prazer recebê-lo em nosso espaço criativo. Aqui, atendemos suas necessidades através da impressão 3D, com atenção a cada detalhe e compromisso com a qualidade. </p> 
-       
-        <br> 
+        <main>
+            <section class="hero">
+                <h2>Seja muito bem-vindo a Soir Alliv</h2>
+                <p> É um prazer recebê-lo em nosso espaço criativo. Aqui, atendemos suas necessidades através da
+                    impressão 3D, com atenção a cada detalhe e compromisso com a qualidade. </p>
 
-        <h3>Modelos 3D personalizáveis</h3> 
-        <p> Todos os modelos disponíveis no site podem ser personalizados conforme sua preferência. Você pode ajustar cores, tamanhos, detalhes e até incluir e editar textos gravados, entre em contato conosco pelo WhatsApp e deixaremos cada peça exatamente do seu jeito. </p> 
-        
-        <br> 
+                <br>
 
-        <h3>Variação de valores</h3> 
-        <p> Alterações nos produtos, como tamanho, cor ou tipo de material, podem gerar pequenas variações no valor final. Isso ocorre devido à diferença no consumo de filamento e no material utilizado em cada peça. </p> 
-        
-        <br> 
+                <h3>Modelos 3D personalizáveis</h3>
+                <p> Todos os modelos disponíveis no site podem ser personalizados conforme sua preferência. Você pode
+                    ajustar cores, tamanhos, detalhes e até incluir e editar textos gravados, entre em contato conosco
+                    pelo WhatsApp e deixaremos cada peça exatamente do seu jeito. </p>
 
-        <h3>Encomendas sob medida</h3> 
-        <p> Também realizamos criações exclusivas que não estão listadas no site. Caso deseje um modelo totalmente novo ou específico, entre em contato conosco pelo WhatsApp e descreva sua ideia. Desenvolveremos o projeto especialmente para você. </p> 
-       
-        <div class="actions"><a class="btn secondary" href="https://wa.me/5519988822112?text=Olá!%20Gostaria%20de%20pedir%20uma%20encomenda%20sob%20medida!" target="_blank">Falar no WhatsApp</a> </div>
+                <br>
 
-</section>
+                <h3>Variação de valores</h3>
+                <p> Alterações nos produtos, como tamanho, cor ou tipo de material, podem gerar pequenas variações no
+                    valor final. Isso ocorre devido à diferença no consumo de filamento e no material utilizado em cada
+                    peça. </p>
 
-      <section id="catalog">
-        <h2>Catálogo</h2>
-        <div class="filters">
-          <input type="text" id="search" placeholder="Buscar produto...">
-          <select id="filterCat">
-            <option value="">Categoria</option>
-            <option value="miniatura">Miniaturas</option>
-            <option value="MTG">MTG</option>
-            <option value="RPG">RPG</option>
-          </select>
-        </div>
-        <div class="catalog" id="catalogGrid"></div>
-      </section>
-    </main>
+                <br>
 
-    <footer>© 2025 Soir Alliv. Todos os direitos reservados.</footer>
-  </div>
+                <h3>Encomendas sob medida</h3>
+                <p> Também realizamos criações exclusivas que não estão listadas no site. Caso deseje um modelo
+                    totalmente novo ou específico, entre em contato conosco pelo WhatsApp e descreva sua ideia.
+                    Desenvolveremos o projeto especialmente para você. </p>
 
-  <!-- Modal Produto -->
-  <div class="modal" id="modal">
-    <div class="box">
-      <button id="closeModal"
-        style="float:right;border:0;background:none;font-size:18px;cursor:pointer;">✕</button>
-      <h3 id="modalName"></h3>
-      <img id="modalImg" src="">
-      <p id="modalDesc"></p>
-      <p><strong>Material:</strong> <span id="modalMat"></span></p>
-      <p><strong>Tamanho:</strong> <span id="modalSize"></span></p>
-      <p><strong>Preço:</strong> <span id="modalPrice"></span></p>
-      <button id="addToCart" class="btn primary">Adicionar ao Carrinho</button>
+                <div class="actions"><a class="btn secondary"
+                        href="https://wa.me/5519988822112?text=Olá!%20Gostaria%20de%20pedir%20uma%20encomenda%20sob%20medida!"
+                        target="_blank">Falar no WhatsApp</a> </div>
+
+            </section>
+
+            <section id="catalog">
+                <h2>Catálogo</h2>
+                <div class="filters">
+                    <input type="text" id="search" placeholder="Buscar produto...">
+                    <select id="filterCat">
+                        <option value="">Categoria</option>
+                        <option value="miniatura">Miniaturas</option>
+                        <option value="MTG">MTG</option>
+                        <option value="RPG">RPG</option>
+                    </select>
+                </div>
+                <div class="catalog" id="catalogGrid"></div>
+            </section>
+        </main>
+
+        <footer>© 2025 Soir Alliv. Todos os direitos reservados.</footer>
     </div>
-  </div>
 
-  <!-- Modal Carrinho -->
-  <div class="modal" id="cartModal">
-    <div class="box">
-      <button id="closeCart"
-        style="float:right;border:0;background:none;font-size:18px;cursor:pointer;">✕</button>
-      <h3>🛒 Seu Carrinho</h3>
-      <div id="cartItems"></div>
-      <div id="cartItems"></div>
-      <p id="cartTotal" style="margin-top:10px;font-weight:bold;text-align:right;"></p>
+    <!-- Modal Produto -->
+    <div class="modal" id="modal">
+        <div class="box">
+            <button id="closeModal"
+                style="float:right;border:0;background:none;font-size:18px;cursor:pointer;">✕</button>
+            <h3 id="modalName"></h3>
 
-      <br>
-      <button id="sendCart" class="btn primary" style="width:100%">Enviar pedido pelo WhatsApp</button>
+            <!-- Carrossel -->
+            <div class="carousel">
+                <button class="prev">‹</button>
+                <img id="carouselImg" src="" alt="">
+                <button class="next">›</button>
+            </div>
+
+            <p id="modalDesc"></p>
+            <p><strong>Material:</strong> <span id="modalMat"></span></p>
+            <p><strong>Tamanho:</strong> <span id="modalSize"></span></p>
+            <p><strong>Preço:</strong> <span id="modalPrice"></span></p>
+            <button id="addToCart" class="btn primary">Adicionar ao Carrinho</button>
+        </div>
     </div>
-  </div>
 
-  <script>
-    const PHONE_NUMBER = '5519988822112';
-    const grid = document.getElementById('catalogGrid');
-    const search = document.getElementById('search');
-    const cat = document.getElementById('filterCat');
+    <!-- Modal Carrinho -->
+    <div class="modal" id="cartModal">
+        <div class="box">
+            <button id="closeCart"
+                style="float:right;border:0;background:none;font-size:18px;cursor:pointer;">✕</button>
+            <h3>🛒 Seu Carrinho</h3>
+            <div id="cartItems"></div>
+            <div id="cartItems"></div>
+            <p id="cartTotal" style="margin-top:10px;font-weight:bold;text-align:right;"></p>
 
-    let products = [];
-    let cart = [];
+            <br>
+            <button id="sendCart" class="btn primary" style="width:100%">Enviar pedido pelo WhatsApp</button>
+        </div>
+    </div>
 
-    async function loadProducts() {
-      const res = await fetch('produtos.json');
-      products = await res.json();
-      render();
-    }
+    <script>
+        const PHONE_NUMBER = '5519988822112';
+        const grid = document.getElementById('catalogGrid');
+        const search = document.getElementById('search');
+        const cat = document.getElementById('filterCat');
 
-    function render() {
-      const term = search.value.toLowerCase();
-      const c = cat.value;
-      grid.innerHTML = '';
-      products.filter(p => {
-        const matchTerm = p.name.toLowerCase().includes(term) || p.desc.toLowerCase().includes(term);
-        const matchCat = !c || p.category === c;
-        return matchTerm && matchCat;
-      }).forEach(p => {
-        const el = document.createElement('div');
-        el.className = 'card';
-        el.innerHTML = `
-          <img src="${p.img}" alt="${p.name}">
-          <h3>${p.name}</h3>
-          <p>${p.desc}</p>
-          <div class="meta">
-            <span class="chip">${p.material.toUpperCase()}</span>
-            <button class="btn secondary" data-id="${p.id}">Ver</button>
-          </div>`;
-        grid.appendChild(el);
-      });
-    }
+        let products = [];
+        let cart = [];
 
-    [search, cat].forEach(el => el.addEventListener('input', render));
+        async function loadProducts() {
+            const res = await fetch('produtos.json');
+            products = await res.json();
+            render();
+        }
 
-    const modal = document.getElementById('modal');
-    const modalImg = document.getElementById('modalImg');
-    const modalName = document.getElementById('modalName');
-    const modalDesc = document.getElementById('modalDesc');
-    const modalMat = document.getElementById('modalMat');
-    const modalSize = document.getElementById('modalSize');
-    const modalPrice = document.getElementById('modalPrice');
-    const addToCartBtn = document.getElementById('addToCart');
-    let currentProduct = null;
+        function render() {
+            const term = search.value.toLowerCase();
+            const c = cat.value;
+            grid.innerHTML = '';
+            products.filter(p => {
+                const matchTerm = p.name.toLowerCase().includes(term) || p.desc.toLowerCase().includes(term);
+                const matchCat = !c || p.category === c;
+                return matchTerm && matchCat;
+            }).forEach(p => {
+                const el = document.createElement('div');
+                el.className = 'card';
 
-    document.addEventListener('click', e => {
-      const b = e.target.closest('[data-id]');
-      if (!b) return;
-      const p = products.find(x => x.id === b.dataset.id);
-      currentProduct = p;
-      modal.classList.add('show');
-      modalImg.src = p.img;
-      modalName.textContent = p.name;
-      modalDesc.textContent = p.desc;
-      modalMat.textContent = p.material.toUpperCase();
-      modalSize.textContent = p.size;
-      modalPrice.textContent = p.price;
-    });
+                // Prepare images array (support legacy `img` field)
+                const imgs = p.images && p.images.length ? p.images : (p.img ? [p.img] : []);
 
-    addToCartBtn.onclick = () => {
-    cart.push(currentProduct);
-     updateCartCount();
-     modal.classList.remove('show');
-    };
+                // build carousel markup (compact for card)
+                let carouselHtml = '';
+                if (imgs.length > 0) {
+                    const first = imgs[0];
+                    carouselHtml = `
+        <div class="carousel" data-product-id="${p.id}" data-index="0">
+          <button class="prev">‹</button>
+          <img src="${first}" alt="${p.name}">
+          <button class="next">›</button>
+        </div>`;
+                }
+
+                el.innerHTML = `
+      ${carouselHtml}
+      <h3>${p.name}</h3>
+      <p>${p.desc}</p>
+      <div class="meta">
+        <span class="chip">${p.material.toUpperCase()}</span>
+        <button class="btn secondary" data-id="${p.id}">Ver</button>
+      </div>`;
+
+                // store images on element for quick access in the carousel controller
+                el.__images = imgs;
+                grid.appendChild(el);
+            });
+        }
+
+        [search, cat].forEach(el => el.addEventListener('input', render));
+
+        // Controle de carrossel nos cards via event delegation
+        grid.addEventListener('click', (e) => {
+            const btnPrev = e.target.closest('.carousel .prev');
+            const btnNext = e.target.closest('.carousel .next');
+            if (!btnPrev && !btnNext) return;
+
+            // não deixe o clique propagar pra outros handlers (ex: abrir modal)
+            e.stopPropagation();
+
+            const carousel = e.target.closest('.carousel');
+            if (!carousel) return;
+            const card = carousel.closest('.card');
+            const imgs = card && card.__images ? card.__images : [];
+            if (!imgs || imgs.length === 0) return;
+
+            let idx = parseInt(carousel.getAttribute('data-index') || '0', 10);
+            if (btnPrev) {
+                idx = (idx - 1 + imgs.length) % imgs.length;
+            } else if (btnNext) {
+                idx = (idx + 1) % imgs.length;
+            }
+            carousel.setAttribute('data-index', idx);
+            const imgEl = carousel.querySelector('img');
+            if (imgEl) imgEl.src = imgs[idx];
+        });
+
+        const modal = document.getElementById('modal');
+        const modalImg = document.getElementById('modalImg');
+        const modalName = document.getElementById('modalName');
+        const modalDesc = document.getElementById('modalDesc');
+        const modalMat = document.getElementById('modalMat');
+        const modalSize = document.getElementById('modalSize');
+        const modalPrice = document.getElementById('modalPrice');
+        const addToCartBtn = document.getElementById('addToCart');
+        let currentProduct = null;
+
+        const carouselImg = document.getElementById('carouselImg');
+        const prevBtn = document.querySelector('.carousel .prev');
+        const nextBtn = document.querySelector('.carousel .next');
+        let currentImageIndex = 0;
+
+        // Função para adicionar ao carrinho (aplica apenas se o botão existir)
+        if (addToCartBtn) {
+            addToCartBtn.addEventListener('click', () => {
+                if (!currentProduct) return;
+                cart.push(currentProduct);
+                updateCartCount();
+                renderCart();
+                modal.classList.remove('show');
+                // alert removido por solicitação — evitar popups inesperados
+            });
+        }
+
+        document.addEventListener('click', e => {
+            const b = e.target.closest('[data-id]');
+            if (!b) return;
+            const p = products.find(x => x.id === b.dataset.id);
+            currentProduct = p;
+            currentImageIndex = 0;
+            modal.classList.add('show');
+
+            // Se o produto tiver várias imagens
+            if (p.images && p.images.length > 0) {
+                carouselImg.src = p.images[0];
+            } else {
+                carouselImg.src = p.img; // compatível com produtos antigos
+            }
+
+            modalName.textContent = p.name;
+            modalDesc.textContent = p.desc;
+            modalMat.textContent = p.material.toUpperCase();
+            modalSize.textContent = p.size;
+            modalPrice.textContent = p.price;
+        });
+
+        // Navegação do carrossel
+        prevBtn.onclick = () => {
+            if (!currentProduct.images) return;
+            currentImageIndex = (currentImageIndex - 1 + currentProduct.images.length) % currentProduct.images.length;
+            carouselImg.src = currentProduct.images[currentImageIndex];
+        };
+
+        nextBtn.onclick = () => {
+            if (!currentProduct.images) return;
+            currentImageIndex = (currentImageIndex + 1) % currentProduct.images.length;
+            carouselImg.src = currentProduct.images[currentImageIndex];
+        };
 
 
-    function updateCartCount() {
-      document.getElementById('cartCount').textContent = cart.length;
-    }
+        function updateCartCount() {
+            document.getElementById('cartCount').textContent = cart.length;
+        }
 
-    document.getElementById('closeModal').onclick = () => modal.classList.remove('show');
-    modal.onclick = e => { if (e.target === modal) modal.classList.remove('show'); };
+        document.getElementById('closeModal').onclick = () => modal.classList.remove('show');
+        modal.onclick = e => { if (e.target === modal) modal.classList.remove('show'); };
 
-    // Carrinho modal
-    const cartModal = document.getElementById('cartModal');
-    const cartItems = document.getElementById('cartItems');
-    const openCart = document.getElementById('openCart');
-    const closeCart = document.getElementById('closeCart');
+        // Carrinho modal
+        const cartModal = document.getElementById('cartModal');
+        const cartItems = document.getElementById('cartItems');
+        const openCart = document.getElementById('openCart');
+        const closeCart = document.getElementById('closeCart');
 
-    openCart.onclick = () => {
-      renderCart();
-      cartModal.classList.add('show');
-    };
-    closeCart.onclick = () => cartModal.classList.remove('show');
-    cartModal.onclick = e => { if (e.target === cartModal) cartModal.classList.remove('show'); };
+        openCart.onclick = () => {
+            renderCart();
+            cartModal.classList.add('show');
+        };
+        closeCart.onclick = () => cartModal.classList.remove('show');
+        cartModal.onclick = e => { if (e.target === cartModal) cartModal.classList.remove('show'); };
 
-    function renderCart() {
-  if (cart.length === 0) {
-    cartItems.innerHTML = '<p>Seu carrinho está vazio.</p>';
-    document.getElementById('cartTotal').textContent = '';
-    return;
-  }
+        function renderCart() {
+            if (cart.length === 0) {
+                cartItems.innerHTML = '<p>Seu carrinho está vazio.</p>';
+                document.getElementById('cartTotal').textContent = '';
+                return;
+            }
 
-  // Renderiza os itens
-  cartItems.innerHTML = cart.map((p, i) => `
+            // Renderiza os itens
+            cartItems.innerHTML = cart.map((p, i) => `
     <div class="cart-item" data-index="${i}" style="display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #eee;padding:6px 0;">
       <span>${p.name}</span>
       <button class="remove-item" style="background:none;border:none;color:#f97316;cursor:pointer;">Remover</button>
     </div>
   `).join('');
 
-  // Calcula e mostra o total
-  const total = cart.reduce((sum, p) => sum + parseFloat(p.price.replace(/[^\d.-]/g, '')), 0);
-  document.getElementById('cartTotal').textContent = `Total: R$ ${total.toFixed(2)}`;
-}
+            // Calcula e mostra o total
+            const total = cart.reduce((sum, p) => sum + parseFloat(p.price.replace(/[^\d.-]/g, '')), 0);
+            document.getElementById('cartTotal').textContent = `Total: R$ ${total.toFixed(2)}`;
+        }
 
-// Adiciona escuta de eventos no container (event delegation)
-cartItems.addEventListener('click', e => {
-  if (e.target.classList.contains('remove-item')) {
-    const index = e.target.closest('.cart-item').dataset.index;
-    cart.splice(index, 1);
-    updateCartCount();
-    renderCart();
-  }
-});
+        // Adiciona escuta de eventos no container (event delegation)
+        cartItems.addEventListener('click', e => {
+            if (e.target.classList.contains('remove-item')) {
+                const index = e.target.closest('.cart-item').dataset.index;
+                cart.splice(index, 1);
+                updateCartCount();
+                renderCart();
+            }
+        });
 
-    document.getElementById('sendCart').onclick = () => {
-      if (cart.length === 0) return;
-      const msg = "Olá! Gostaria de pedir os seguintes produtos:\n\n" +
-        cart.map(p => `- ${p.name}`).join('\n');
-      window.open(`https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(msg)}`, '_blank');
-    };
+        document.getElementById('sendCart').onclick = () => {
+            if (cart.length === 0) return;
+            const msg = "Olá! Gostaria de pedir os seguintes produtos:\n\n" +
+                cart.map(p => `- ${p.name}`).join('\n');
+            window.open(`https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(msg)}`, '_blank');
+        };
 
-    loadProducts();
-  </script>
+        // Controle de carrossel nos cards via event delegation
+        grid.addEventListener('click', (e) => {
+            const btnPrev = e.target.closest('.carousel .prev');
+            const btnNext = e.target.closest('.carousel .next');
+            if (!btnPrev && !btnNext) return;
+
+            // não deixe o clique propagar pra outros handlers (ex: abrir modal)
+            e.stopPropagation();
+
+            const carousel = e.target.closest('.carousel');
+            if (!carousel) return;
+            const card = carousel.closest('.card');
+            const imgs = card && card.__images ? card.__images : [];
+            if (!imgs || imgs.length === 0) return;
+
+            let idx = parseInt(carousel.getAttribute('data-index') || '0', 10);
+            if (btnPrev) {
+                idx = (idx - 1 + imgs.length) % imgs.length;
+            } else if (btnNext) {
+                idx = (idx + 1) % imgs.length;
+            }
+            carousel.setAttribute('data-index', idx);
+            const imgEl = carousel.querySelector('img');
+            if (imgEl) imgEl.src = imgs[idx];
+        });
+
+        loadProducts();
+    </script>
 </body>
+
 </html>
