@@ -18,5 +18,15 @@
     "material": "pla",
     "category": "acessorio",
     "tags": ["fantasia", "decoracao"]
+  },
+  {
+    "id": "p03",
+    "name": "Teste",
+    "img": "https://picsum.photos/seed/rpg2/600/400",
+    "desc": "Teste.",
+    "size": "25 cm",
+    "material": "pla",
+    "category": "acessorio",
+    "tags": ["fantasia", "decoracao"]
   }
 ]
