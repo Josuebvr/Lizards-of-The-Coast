@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Soir Alliv — Portfólio Impressão 3D</title>
+  <meta name="description" content="Portfólio de produtos de impressão 3D — Soir Alliv">
+  <style>
+    :root{
+      --bg:#ffffff;
+      --text:#111;
+      --muted:#666;
+      --accent:#f97316;
+      --radius:14px;
+      --maxw:1200px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto;
+    }
+    body{
+      margin:0;
+      background:linear-gradient(180deg, #fff 0%, #fff6f0 100%);
+      color:var(--text);
+      line-height:1.5;
+      display:flex;
+      justify-content:center;
+      padding:40px 20px;
+    }
+    .wrap{width:100%;max-width:var(--maxw);}
+
+    header{
+      display:flex;align-items:center;justify-content:space-between;
+      padding:18px 22px;margin-bottom:28px;
+      border-radius:var(--radius);
+      background:#fff;
+      box-shadow:0 4px 20px rgba(0,0,0,0.08);
+    }
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{
+      width:56px;height:56px;border-radius:12px;
+      background:linear-gradient(135deg,var(--accent), #ffb77a);
+      display:flex;align-items:center;justify-content:center;
+      font-weight:700;color:white;font-size:20px;
+      font-family:Georgia, serif;
+    }
+    .brand h1{margin:0;font-size:20px;color:var(--text)}
+    .brand p{margin:0;font-size:13px;color:var(--muted)}
+    nav{display:flex;gap:12px;align-items:center}
+    nav a{color:var(--text);text-decoration:none;font-size:14px;padding:8px 12px;border-radius:8px}
+    nav a.cta{background:var(--accent);color:#fff;}
+
+    main{display:grid;gap:30px}
+
+    .hero{
+      display:flex;gap:24px;align-items:center;
+      background:#fff;border-radius:var(--radius);
+      padding:26px;box-shadow:0 4px 20px rgba(0,0,0,0.08);
+    }
+    .hero h2{margin:0;font-size:26px;}
+    .hero p{color:var(--muted);margin-top:10px}
+    .btn{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:10px 16px;border-radius:12px;border:0;cursor:pointer;
+      font-weight:600;
+    }
+    .btn.primary{background:var(--accent);color:#fff;}
+    .btn.secondary{background:#fff;border:1px solid var(--accent);color:var(--accent);}
+    .actions{margin-top:16px;display:flex;gap:12px;flex-wrap:wrap;}
+
+    /* filtros */
+    .filters{
+      display:flex;flex-wrap:wrap;gap:12px;margin-bottom:18px;align-items:center;
+      background:#fff;padding:12px 18px;border-radius:var(--radius);
+      box-shadow:0 4px 20px rgba(0,0,0,0.05);
+    }
+    .filters select,.filters input{
+      padding:8px 10px;border-radius:8px;border:1px solid #ddd;font-size:14px;
+    }
+
+    .catalog{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+    .card{
+      background:#fff;border-radius:var(--radius);
+      padding:12px;box-shadow:0 4px 20px rgba(0,0,0,0.05);
+      transition:transform .2s ease;
+    }
+    .card:hover{transform:translateY(-6px);}
+    .card img{width:100%;border-radius:8px;object-fit:cover;aspect-ratio:1.2/1;}
+    .card h3{margin:10px 0 4px 0;font-size:16px}
+    .card p{margin:0;color:var(--muted);font-size:13px}
+    .meta{display:flex;justify-content:space-between;align-items:center;margin-top:10px;flex-wrap:wrap;}
+    .chip{padding:5px 8px;border-radius:999px;font-size:12px;background:rgba(249,115,22,0.1);color:var(--accent);}
+
+    footer{
+      margin-top:24px;padding:18px;
+      border-radius:var(--radius);
+      background:#fff;
+      box-shadow:0 4px 20px rgba(0,0,0,0.05);
+      display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;
+    }
+    .whatsapp{color:var(--accent);text-decoration:none;font-weight:600;}
+
+    /* modal */
+    .modal{position:fixed;inset:0;background:rgba(0,0,0,0.6);
+      display:none;align-items:center;justify-content:center;z-index:50;}
+    .modal.show{display:flex;}
+    .modal .box{
+      background:#fff;border-radius:var(--radius);padding:20px;max-width:800px;width:95%;
+    }
+    .modal img{width:100%;border-radius:8px;margin-bottom:12px;}
+    .modal .btn{margin-top:8px;}
+
+    @media(max-width:640px){
+      .hero{flex-direction:column;}
+      .filters{flex-direction:column;align-items:stretch;}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">SA</div>
+        <div>
+          <h1>Soir Alliv</h1>
+          <p>Portfólio de Impressões 3D — Temas RPG & Design</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#catalog" class="cta">Catálogo</a>
+        <a href="#about">Sobre</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="intro">
+          <h2>Modelos 3D com alma de aventura.</h2>
+          <p>Miniaturas, objetos e acessórios inspirados em mundos de fantasia e RPG. Impressos com precisão e acabamento profissional.</p>
+          <div class="actions">
+            <button class="btn primary" id="ctaCatalog">Ver Catálogo</button>
+            <a class="btn secondary" href="https://wa.me/5519988822112" target="_blank">Falar no WhatsApp</a>
+          </div>
+        </div>
+        <div>
+          <img src="https://picsum.photos/seed/soirHero/420/280" alt="Exemplo de impressão 3D">
+        </div>
+      </section>
+
+      <section id="catalog">
+        <h2>Catálogo</h2>
+
+        <!-- Filtros -->
+        <div class="filters">
+          <input type="text" id="search" placeholder="Buscar produto...">
+          <select id="filterCat">
+            <option value="">Categoria</option>
+            <option value="miniatura">Miniaturas</option>
+            <option value="acessorio">Acessórios</option>
+            <option value="decoracao">Decoração</option>
+            <option value="funcional">Peças funcionais</option>
+          </select>
+          <select id="filterMat">
+            <option value="">Material</option>
+            <option value="pla">PLA</option>
+            <option value="petg">PETG</option>
+            <option value="resina">Resina</option>
+            <option value="asa">ASA</option>
+          </select>
+        </div>
+
+        <div class="catalog" id="catalogGrid"></div>
+      </section>
+
+      <section id="about">
+        <h2>Sobre</h2>
+        <p class="muted">
+          A <strong>Soir Alliv</strong> é dedicada à criação de modelos e objetos 3D com foco em mundos de fantasia, RPG e design criativo.  
+          Trabalhamos com PLA, PETG, ASA e Resina — garantindo resistência, detalhe e qualidade em cada peça.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <strong>Soir Alliv</strong><br>
+        <span class="muted">Impressões 3D sob demanda</span>
+      </div>
+      <a class="whatsapp" href="https://wa.me/5519988822112" target="_blank">📞 WhatsApp</a>
+    </footer>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal" id="modal">
+    <div class="box">
+      <button id="closeModal" style="float:right;border:0;background:none;font-size:18px;cursor:pointer;">✕</button>
+      <h3 id="modalName"></h3>
+      <img id="modalImg" src="">
+      <p id="modalDesc"></p>
+      <p><strong>Material:</strong> <span id="modalMat"></span></p>
+      <p><strong>Tamanho:</strong> <span id="modalSize"></span></p>
+      <p><strong>Preço:</strong> <span id="modalPrice"></span></p>
+      <a id="orderWhats" class="btn primary" target="_blank">Pedir via WhatsApp</a>
+    </div>
+  </div>
+
+  <script>
+    const PHONE_NUMBER = '5519988822112';
+    const products = [
+      {id:'p01',name:'Miniatura: Cavaleiro Élfico',img:'https://picsum.photos/seed/rpg1/600/400',desc:'Miniatura em escala 1:24 com detalhes inspirados em armaduras élficas.',size:'7 cm',material:'resina',category:'miniatura',tags:['rpg','fantasia']},
+      {id:'p02',name:'Espada decorativa pequena',img:'https://picsum.photos/seed/rpg2/600/400',desc:'Espada estilizada para decoração ou cosplay.',size:'25 cm',material:'pla',category:'acessorio',tags:['fantasia','decoracao']},
+      {id:'p03',name:'Suporte de dados RPG',img:'https://picsum.photos/seed/rpg3/600/400',desc:'Suporte modular para dados D20 e miniaturas.',size:'10x10 cm',material:'petg',category:'funcional',tags:['rpg','organizador']},
+      {id:'p04',name:'Estátua de dragão',img:'https://picsum.photos/seed/rpg4/600/400',desc:'Figura detalhada de dragão em posição de guarda.',size:'20 cm',material:'pla',category:'decoracao',tags:['dragao','colecionavel']},
+    ];
+
+    const grid=document.getElementById('catalogGrid');
+    const search=document.getElementById('search');
+    const cat=document.getElementById('filterCat');
+    const mat=document.getElementById('filterMat');
+
+    function render(){
+      const term=search.value.toLowerCase();
+      const c=cat.value, m=mat.value;
+      grid.innerHTML='';
+      products.filter(p=>{
+        const matchTerm=p.name.toLowerCase().includes(term)||p.desc.toLowerCase().includes(term);
+        const matchCat=!c||p.category===c;
+        const matchMat=!m||p.material===m;
+        return matchTerm&&matchCat&&matchMat;
+      }).forEach(p=>{
+        const el=document.createElement('div');
+        el.className='card';
+        el.innerHTML=`
+          <img src="${p.img}" alt="${p.name}">
+          <h3>${p.name}</h3>
+          <p>${p.desc}</p>
+          <div class="meta">
+            <span class="chip">${p.material.toUpperCase()}</span>
+            <button class="btn secondary" data-id="${p.id}">Ver</button>
+          </div>`;
+        grid.appendChild(el);
+      });
+    }
+    [search,cat,mat].forEach(el=>el.addEventListener('input',render));
+
+    const modal=document.getElementById('modal');
+    const modalImg=document.getElementById('modalImg');
+    const modalName=document.getElementById('modalName');
+    const modalDesc=document.getElementById('modalDesc');
+    const modalMat=document.getElementById('modalMat');
+    const modalSize=document.getElementById('modalSize');
+    const modalPrice=document.getElementById('modalPrice');
+    const orderWhats=document.getElementById('orderWhats');
+    document.addEventListener('click',e=>{
+      const b=e.target.closest('[data-id]');
+      if(!b)return;
+      const p=products.find(x=>x.id===b.dataset.id);
+      modal.classList.add('show');
+      modalImg.src=p.img;
+      modalName.textContent=p.name;
+      modalDesc.textContent=p.desc;
+      modalMat.textContent=p.material.toUpperCase();
+      modalSize.textContent=p.size;
+      modalPrice.textContent='Sob consulta';
+      orderWhats.href=`https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent('Olá! Tenho interesse no produto: '+p.name)}`;
+    });
+    document.getElementById('closeModal').onclick=()=>modal.classList.remove('show');
+    modal.onclick=e=>{if(e.target===modal)modal.classList.remove('show');};
+    document.getElementById('ctaCatalog').onclick=()=>location.hash='#catalog';
+    render();
+  </script>
+</body>
+</html>
