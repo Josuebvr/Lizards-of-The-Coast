@@ -52,14 +52,16 @@ function render() {
         </div>`;
         }
 
+        // mostrar disponibilidade em cards de cores, caso contrário mostrar material
+        const chipText = isColorsPage ? (p.price || 'Disponível') : (p.material ? p.material.toUpperCase() : '');
         el.innerHTML = `
-      ${carouselHtml}
-      <h3>${p.name}</h3>
-      <p>${p.desc}</p>
-      <div class="meta">
-        <span class="chip">${p.material.toUpperCase()}</span>
-        <button class="btn secondary" data-id="${p.id}">Ver</button>
-      </div>`;
+            ${carouselHtml}
+            <h3>${p.name}</h3>
+            <p>${p.desc}</p>
+            <div class="meta">
+                <span class="chip">${chipText}</span>
+                <button class="btn secondary" data-id="${p.id}">Ver</button>
+            </div>`;
 
         // store images on element for quick access in the carousel controller
         el.__images = imgs;

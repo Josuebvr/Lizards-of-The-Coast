@@ -11,7 +11,7 @@
         "hex": "#f97316",
         "material": "PLA",
         "category": "cor",
-        "price": "Padrão"
+        "price": "Indisponível"
     },
     {
         "id": "cor02",
@@ -25,7 +25,7 @@
         "hex": "#000",
         "material": "PLA",
         "category": "cor",
-        "price": "Padrão"
+        "price": "Indisponível"
     },
     {
         "id": "cor03",
@@ -39,7 +39,7 @@
         "hex": "#fff",
         "material": "PLA",
         "category": "cor",
-        "price": "Padrão"
+        "price": "Indisponível"
     },
     {
         "id": "cor04",
@@ -53,7 +53,7 @@
         "hex": "#e63946",
         "material": "PLA",
         "category": "cor",
-        "price": "Padrão"
+        "price": "Indisponível"
     },
     {
         "id": "cor05",
@@ -67,7 +67,7 @@
         "hex": "#457b9d",
         "material": "PLA",
         "category": "cor",
-        "price": "Padrão"
+        "price": "Indisponível"
     },
     {
         "id": "cor06",
@@ -81,7 +81,7 @@
         "hex": "#2a9d8f",
         "material": "PLA",
         "category": "cor",
-        "price": "Padrão"
+        "price": "Indisponível"
     },
     {
         "id": "cor07",
@@ -95,7 +95,7 @@
         "hex": "#ffd166",
         "material": "PLA",
         "category": "cor",
-        "price": "Padrão"
+        "price": "Indisponível"
     },
     {
         "id": "cor08",
@@ -109,6 +109,6 @@
         "hex": "#9b5de5",
         "material": "PLA",
         "category": "cor",
-        "price": "Padrão"
+        "price": "Indisponível"
     }
 ]
