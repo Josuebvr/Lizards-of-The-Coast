@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Cores</title>
+    <meta name="description" content="Cores disponíveis para impressão 3D - Soir Alliv">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="brand">
+                <div class="logo"></div>
+                <div>
+                    <h1>Soir Alliv</h1>
+                    <p>Portfólio de Impressões 3D</p>
+                </div>
+            </div>
+            <nav>
+                <a href="index.html">Catálogo</a>
+                <a href="cores.html" class="cta">Cores</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="catalog">
+                <h2>Cores disponíveis para impressão 3D</h2>
+                <p style="text-align:center;color:var(--muted);max-width:700px;margin:0 auto 30px auto;">
+                    Explore abaixo as cores que trazem vida às suas criações impressas.
+                    Cada tom pode ser utilizado para personalizar seus modelos —
+                    e, caso deseje algo especial, entre em contato conosco pelo WhatsApp para um acabamento único.
+                </p>
+                <div class="catalog" id="catalogGrid"></div>
+            </section>
+        </main>
+
+        <footer>© 2025 Soir Alliv. Todos os direitos reservados.</footer>
+    </div>
+
+    <!-- Modal Cor -->
+    <div class="modal" id="modal">
+        <div class="box">
+            <button id="closeModal"
+                style="float:right;border:0;background:none;font-size:18px;cursor:pointer;">✕</button>
+            <h3 id="modalName"></h3>
+
+            <!-- Carrossel para cores -->
+            <div class="carousel">
+                <button class="prev">‹</button>
+                <img id="carouselImg" src="" alt="">
+                <button class="next">›</button>
+            </div>
+
+            <p id="modalDesc"></p>
+            <p><strong>Material:</strong> <span id="modalMat"></span></p>
+            <p><strong>Cor:</strong> <span id="modalHex"
+                    style="display:inline-block;width:20px;height:20px;border-radius:4px;vertical-align:middle;margin-left:6px;border:1px solid #ddd;"></span>
+            </p>
+            <p><strong>Disponibilidade:</strong> <span id="modalPrice"></span></p>
+        </div>
+    </div>
+
+    <!-- Modal Carrinho -->
+    <div class="modal" id="cartModal">
+        <div class="box">
+            <button id="closeCart"
+                style="float:right;border:0;background:none;font-size:18px;cursor:pointer;">✕</button>
+            <h3>🛒 Seu Carrinho</h3>
+            <div id="cartItems"></div>
+            <p id="cartTotal" style="margin-top:10px;font-weight:bold;text-align:right;"></p>
+            <br>
+            <button id="sendCart" class="btn primary" style="width:100%">Enviar pedido pelo WhatsApp</button>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    // Flag global para detectar que estamos em cores.html
+    window.isColorsPage = true;
+</script>
+<script src="script.js"></script>
+
+</html>
