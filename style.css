@@ -80,13 +80,20 @@
      color: var(--muted)
  }
 
- nav {
-     display: flex;
-     gap: 12px;
-     align-items: center;
-     flex-wrap: wrap;
-     /* permite que itens do nav quebrem em telas pequenas */
- }
+    nav {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex-wrap: nowrap; /* impede quebra de linha */
+    }
+
+    nav a,
+    nav .cart-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap; /* garante que fiquem na mesma linha */
+    }
 
  nav a {
      color: var(--text);
@@ -201,39 +208,38 @@
  }
 
  .catalog {
-     display: grid;
-     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-     gap: 18px;
-     align-items: stretch;
- }
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 260px); /* 🔸 largura fixa dos cards */
+    gap: 18px;
+    justify-content: center; /* 🔸 centraliza se sobrar espaço */
+}
 
  .card {
-     box-sizing: border-box;
-     background: #fff;
-     border-radius: var(--radius);
-     padding: 12px;
-     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-     transition: transform .2s ease;
-     display: flex;
-     flex-direction: column;
-     min-height: 320px;
-     /* garante espaço suficiente sem forçar colapso */
-     text-align: left;
-     overflow: hidden;
- }
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: var(--radius);
+    padding: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: transform .2s ease;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    overflow: hidden;
+    height: 420px; /* 🔸 altura fixa para padronizar */
+    justify-content: space-between; /* mantém equilíbrio interno */
+}
 
  .card:hover {
      transform: translateY(-6px);
  }
 
  .card img {
-     width: 100%;
-     border-radius: 8px;
-     object-fit: cover;
-     aspect-ratio: 1.2/1;
-     max-width: 100%;
-     height: auto;
- }
+    width: 100%;
+    height: 240px; /* 🔸 tamanho fixo visível e proporcional */
+    object-fit: cover; /* recorta sem deformar */
+    border-radius: 8px;
+    display: block;
+}
 
  .card h3 {
      margin: 10px 0 4px 0;
