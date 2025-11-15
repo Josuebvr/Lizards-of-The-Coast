@@ -11,6 +11,30 @@ let cart = [];
 const isColorsPage = typeof window.isColorsPage !== 'undefined' ? window.isColorsPage : false;
 const dataFile = isColorsPage ? 'cores.json' : 'produtos.json';
 
+// Helper: determina se uma cor deve ser considerada "Disponível".
+// Tentamos suportar vários formatos usados em JSONs diferentes:
+// - campo booleano `available`
+// - campo `status` com string "Indisponível"/"Indisponivel"
+// - campo `price` que contenha a palavra "indispon" quando indisponível
+// Se não houver marcador explícito, tratamos como disponível (compatível com UI atual).
+function isColorAvailable(p) {
+    if (p == null) return false;
+    if (Object.prototype.hasOwnProperty.call(p, 'available')) {
+        const v = p.available;
+        return v === true || v === 'true' || v === 1 || v === '1';
+    }
+    if (p.status) {
+        const s = String(p.status).toLowerCase();
+        return !(s.includes('indispon') || s.includes('indisponível') || s.includes('indisponivel'));
+    }
+    if (p.price != null) {
+        const s = String(p.price).toLowerCase();
+        return !s.includes('indispon');
+    }
+    // fallback: se não há price nem marker, considere disponível (mantém comportamento atual)
+    return !Object.prototype.hasOwnProperty.call(p, 'price') || p.price === '' || p.price === null;
+}
+
 async function loadProducts() {
     try {
         const res = await fetch(dataFile);
@@ -29,11 +53,25 @@ function render() {
     const term = search ? search.value.toLowerCase() : '';
     const c = cat ? cat.value : '';
     grid.innerHTML = '';
-    products.filter(p => {
+    // filtra primeiro
+    const filtered = products.filter(p => {
         const matchTerm = p.name.toLowerCase().includes(term) || p.desc.toLowerCase().includes(term);
         const matchCat = !c || p.category === c;
         return matchTerm && matchCat;
-    }).forEach(p => {
+    });
+
+    // se estamos na página de cores, ordene colocando disponíveis antes das indisponíveis
+    if (isColorsPage) {
+        filtered.sort((a, b) => {
+            const aa = isColorAvailable(a) ? 1 : 0;
+            const bb = isColorAvailable(b) ? 1 : 0;
+            if (aa === bb) return a.name.localeCompare(b.name);
+            // quando aa > bb (a disponível, b não) queremos que a venha antes => retornar -1
+            return aa > bb ? -1 : 1;
+        });
+    }
+
+    filtered.forEach(p => {
         const el = document.createElement('div');
         el.className = 'card';
 

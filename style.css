@@ -80,20 +80,22 @@
      color: var(--muted)
  }
 
-    nav {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        flex-wrap: nowrap; /* impede quebra de linha */
-    }
+ nav {
+     display: flex;
+     align-items: center;
+     gap: 8px;
+     flex-wrap: nowrap;
+     /* impede quebra de linha */
+ }
 
-    nav a,
-    nav .cart-btn {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        white-space: nowrap; /* garante que fiquem na mesma linha */
-    }
+ nav a,
+ nav .cart-btn {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     white-space: nowrap;
+     /* garante que fiquem na mesma linha */
+ }
 
  nav a {
      color: var(--text);
@@ -208,38 +210,44 @@
  }
 
  .catalog {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 260px); /* 🔸 largura fixa dos cards */
-    gap: 18px;
-    justify-content: center; /* 🔸 centraliza se sobrar espaço */
-}
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     /* 🔸 3 cards por linha */
+     gap: 18px;
+     justify-content: center;
+     /* 🔸 centraliza se sobrar espaço */
+ }
 
  .card {
-    box-sizing: border-box;
-    background: #fff;
-    border-radius: var(--radius);
-    padding: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-    transition: transform .2s ease;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    overflow: hidden;
-    height: 420px; /* 🔸 altura fixa para padronizar */
-    justify-content: space-between; /* mantém equilíbrio interno */
-}
+     box-sizing: border-box;
+     background: #fff;
+     border-radius: var(--radius);
+     padding: 12px;
+     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+     transition: transform .2s ease;
+     display: flex;
+     flex-direction: column;
+     text-align: left;
+     overflow: hidden;
+     height: 520px;
+     /* 🔸 altura fixa para padronizar - aumentada */
+     justify-content: space-between;
+     /* mantém equilíbrio interno */
+ }
 
  .card:hover {
      transform: translateY(-6px);
  }
 
  .card img {
-    width: 100%;
-    height: 240px; /* 🔸 tamanho fixo visível e proporcional */
-    object-fit: cover; /* recorta sem deformar */
-    border-radius: 8px;
-    display: block;
-}
+     width: 100%;
+     height: 300px;
+     /* 🔸 tamanho fixo visível e proporcional - aumentado */
+     object-fit: cover;
+     /* recorta sem deformar */
+     border-radius: 8px;
+     display: block;
+ }
 
  .card h3 {
      margin: 10px 0 4px 0;
@@ -312,7 +320,7 @@
      border-radius: 8px;
      margin-bottom: 12px;
      object-fit: cover;
-     max-height: 280px;
+     max-height: 420px;
  }
 
  @keyframes fadeIn {
@@ -334,7 +342,7 @@
      }
 
      .modal img {
-         max-height: 200px;
+         max-height: 300px;
      }
  }
 
@@ -352,7 +360,7 @@
      width: 100%;
      border-radius: 8px;
      object-fit: cover;
-     max-height: 280px;
+     max-height: 420px;
      transition: opacity 0.3s ease;
  }
 
@@ -384,12 +392,12 @@
 
  /* Card-specific (compact) carousel */
  .card .carousel {
-     max-height: 180px;
+     max-height: 280px;
      margin-bottom: 12px;
  }
 
  .card .carousel img {
-     max-height: 160px;
+     max-height: 260px;
  }
 
  .card .carousel button {
