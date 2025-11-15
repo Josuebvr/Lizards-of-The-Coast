@@ -7,15 +7,12 @@
             "imagens/cores/azul-esverdeado-2.webp",
             "imagens/cores/azul-esverdeado-3.webp"
         ],
-        "desc": "",
+        "desc": "Um azul profundo com toque esverdeado, ideal para peças modernas e detalhadas.",
         "hex": "#004f71",
         "material": "PLA",
         "category": "cor",
         "price": "Indisponível"
     },
-
-
-
 
     {
         "id": "cor02",
@@ -25,15 +22,12 @@
             "imagens/cores/verde-escuro-2.webp",
             "imagens/cores/verde-escuro-3.webp"
         ],
-        "desc": "",
+        "desc": "Um verde forte e fechado, perfeito para modelos mais sérios e estéticos.",
         "hex": "#636b2f",
         "material": "PLA",
         "category": "cor",
         "price": "Indisponível"
     },
-
-
-
 
     {
         "id": "cor03",
@@ -43,15 +37,12 @@
             "imagens/cores/vermelho-dragao-2.webp",
             "imagens/cores/vermelho-dragao-1.webp"
         ],
-        "desc": "",
+        "desc": "Um vermelho intenso e vibrante, perfeito para peças cheias de presença.",
         "hex": "#ff0100",
         "material": "PLA",
         "category": "cor",
         "price": "Indisponível"
     },
-
-
-
 
     {
         "id": "cor04",
@@ -61,15 +52,12 @@
             "imagens/cores/verde-menta-2.webp",
             "imagens/cores/verde-menta-3.webp"
         ],
-        "desc": "",
+        "desc": "Suave e refrescante, ótimo para modelos delicados e decorativos.",
         "hex": "#d3fbe9",
         "material": "PLA",
         "category": "cor",
         "price": "Indisponível"
     },
-
-
-
 
     {
         "id": "cor05",
@@ -79,15 +67,12 @@
             "imagens/cores/verde-amarelado-2.webp",
             "imagens/cores/verde-amarelado-3.webp"
         ],
-        "desc": "",
+        "desc": "Um verde vibrante com tom amarelado, excelente para peças chamativas.",
         "hex": "#85c734",
         "material": "PLA",
         "category": "cor",
         "price": "Indisponível"
     },
-
-
-
 
     {
         "id": "cor06",
@@ -97,15 +82,12 @@
             "imagens/cores/marmore-cinza-2.webp",
             "imagens/cores/marmore-cinza-3.webp"
         ],
-        "desc": "",
+        "desc": "Textura marmorizada elegante, perfeita para modelos decorativos realistas.",
         "hex": "#b2b3b7",
         "material": "PLA",
         "category": "cor",
         "price": "Indisponível"
     },
-
-
-
 
     {
         "id": "cor07",
@@ -115,15 +97,12 @@
             "imagens/cores/marmore-branco-2.webp",
             "imagens/cores/marmore-branco-3.webp"
         ],
-        "desc": "",
+        "desc": "Aspecto clássico de mármore branco, ideal para esculturas e peças premium.",
         "hex": "#e7e8eb",
         "material": "PLA",
         "category": "cor",
         "price": "Indisponível"
     },
-
-
-
 
     {
         "id": "cor08",
@@ -133,15 +112,12 @@
             "imagens/cores/lilas-2.webp",
             "imagens/cores/lilas-3.webp"
         ],
-        "desc": "",
+        "desc": "Tonalidade suave de roxo, ótima para modelos decorativos e criativos.",
         "hex": "#3d1365",
         "material": "PLA",
         "category": "cor",
         "price": "Indisponível"
     },
-
-
-
 
     {
         "id": "cor09",
@@ -151,15 +127,12 @@
             "imagens/cores/cinza-escuro-2.webp",
             "imagens/cores/cinza-escuro-3.webp"
         ],
-        "desc": "",
+        "desc": "Um cinza sólido e discreto, perfeito para peças técnicas e elegantes.",
         "hex": "#565656",
         "material": "PLA",
         "category": "cor",
         "price": "Indisponível"
     },
-
-
-
 
     {
         "id": "cor10",
@@ -169,15 +142,12 @@
             "imagens/cores/cinza-claro-2.webp",
             "imagens/cores/cinza-claro-3.webp"
         ],
-        "desc": "",
+        "desc": "Cinza suave, versátil e limpo, ideal para qualquer tipo de impressão.",
         "hex": "#606060",
         "material": "PLA",
         "category": "cor",
         "price": "Indisponível"
     },
-
-
-
 
     {
         "id": "cor11",
@@ -187,15 +157,12 @@
             "imagens/cores/ciano-2.webp",
             "imagens/cores/ciano-3.webp"
         ],
-        "desc": "",
+        "desc": "Um azul vibrante com leve toque esverdeado, muito chamativo e moderno.",
         "hex": "#00ffff",
         "material": "PLA",
         "category": "cor",
         "price": "Indisponível"
     },
-
-
-
 
     {
         "id": "cor12",
@@ -205,15 +172,12 @@
             "imagens/cores/bordo-2.webp",
             "imagens/cores/bordo-3.webp"
         ],
-        "desc": "",
+        "desc": "Vermelho profundo e elegante, perfeito para projetos sofisticados.",
         "hex": "#800000",
         "material": "PLA",
         "category": "cor",
         "price": "Indisponível"
     },
-
-
-
 
     {
         "id": "cor13",
@@ -223,15 +187,12 @@
             "imagens/cores/amarelo-2.webp",
             "imagens/cores/amarelo-3.webp"
         ],
-        "desc": "",
+        "desc": "Brilhante e alegre, ideal para peças que precisam de destaque.",
         "hex": "#ffff00",
         "material": "PLA",
         "category": "cor",
         "price": "Indisponível"
     },
-
-
-
 
     {
         "id": "cor14",
@@ -241,15 +202,12 @@
             "imagens/cores/marrom-2.webp",
             "imagens/cores/marrom-3.webp"
         ],
-        "desc": "",
+        "desc": "Tom terroso natural, excelente para modelos orgânicos ou rústicos.",
         "hex": "#4a2500",
         "material": "PLA",
         "category": "cor",
         "price": "Indisponível"
     },
-
-
-
 
     {
         "id": "cor15",
@@ -259,15 +217,12 @@
             "imagens/cores/preto-2.webp",
             "imagens/cores/preto-3.webp"
         ],
-        "desc": "",
+        "desc": "Clássico e versátil, perfeito para qualquer aplicação com visual profissional.",
         "hex": "#000000",
         "material": "PLA",
         "category": "cor",
         "price": "Indisponível"
     },
-
-
-
 
     {
         "id": "cor16",
@@ -277,15 +232,12 @@
             "imagens/cores/rosa-claro-2.webp",
             "imagens/cores/rosa-claro-3.webp"
         ],
-        "desc": "",
+        "desc": "Delicado e suave, ótimo para peças decorativas e temáticas.",
         "hex": "#ffb6c1",
         "material": "PLA",
         "category": "cor",
         "price": "Indisponível"
     },
-
-
-
 
     {
         "id": "cor17",
@@ -295,15 +247,12 @@
             "imagens/cores/roxo-2.webp",
             "imagens/cores/roxo-3.webp"
         ],
-        "desc": "",
+        "desc": "Um roxo vibrante e marcante, ideal para criações ousadas.",
         "hex": "#b300b3",
         "material": "PLA",
         "category": "cor",
         "price": "Indisponível"
     },
-
-
-
 
     {
         "id": "cor18",
@@ -313,15 +262,12 @@
             "imagens/cores/verde-2.webp",
             "imagens/cores/verde-3.webp"
         ],
-        "desc": "",
+        "desc": "Verde claro e vivo, perfeito para peças com visual fresco e moderno.",
         "hex": "#4ff4a2",
         "material": "PLA",
         "category": "cor",
         "price": "Indisponível"
     },
-
-
-
 
     {
         "id": "cor19",
@@ -331,15 +277,12 @@
             "imagens/cores/vermelho-2.webp",
             "imagens/cores/vermelho-3.webp"
         ],
-        "desc": "",
+        "desc": "Um vermelho clássico e forte, excelente para modelos que precisam se destacar.",
         "hex": "#cc0000",
         "material": "PLA",
         "category": "cor",
         "price": "Indisponível"
     },
-
-
-
 
     {
         "id": "cor20",
@@ -349,15 +292,12 @@
             "imagens/cores/branco-2.webp",
             "imagens/cores/branco-3.webp"
         ],
-        "desc": "",
+        "desc": "Limpo e neutro, combina com qualquer tipo de impressão e acabamento.",
         "hex": "#ffffff",
         "material": "PLA",
         "category": "cor",
         "price": "Indisponível"
     },
-
-
-
 
     {
         "id": "cor21",
@@ -367,15 +307,12 @@
             "imagens/cores/laranja-2.webp",
             "imagens/cores/laranja-3.webp"
         ],
-        "desc": "",
+        "desc": "Cor vibrante e energética, perfeita para modelos dinâmicos.",
         "hex": "#ffa500",
         "material": "PLA",
         "category": "cor",
         "price": "Indisponível"
     },
-
-
-
 
     {
         "id": "cor22",
@@ -385,15 +322,12 @@
             "imagens/cores/bege-2.webp",
             "imagens/cores/bege-3.webp"
         ],
-        "desc": "",
+        "desc": "Tom neutro e suave, ótimo para peças discretas e elegantes.",
         "hex": "#ead0b4",
         "material": "PLA",
         "category": "cor",
         "price": "Indisponível"
     },
-
-
-
 
     {
         "id": "cor23",
@@ -403,15 +337,12 @@
             "imagens/cores/azul-claro-2.webp",
             "imagens/cores/azul-claro-3.webp"
         ],
-        "desc": "",
+        "desc": "Um azul suave e agradável, ideal para projetos leves e minimalistas.",
         "hex": "#4586c6",
         "material": "PLA",
         "category": "cor",
         "price": "Indisponível"
     },
-
-
-
 
     {
         "id": "cor24",
@@ -421,15 +352,10 @@
             "imagens/cores/azul-2.webp",
             "imagens/cores/azul-3.webp"
         ],
-        "desc": "",
+        "desc": "Azul intenso e profundo, ótimo para impressões marcantes e elegantes.",
         "hex": "#0000b3",
         "material": "PLA",
         "category": "cor",
         "price": "Indisponível"
     }
-
-
-
-
-
 ]
