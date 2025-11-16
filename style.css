@@ -24,7 +24,6 @@ body {
 }
 
 header {
-    /* layout restored: keep header horizontal and spaced */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -33,17 +32,13 @@ header {
     border-radius: var(--radius);
     background: #fff;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-
-    /* sticky behaviour */
     position: sticky;
-    /* manter um pequeno espaçamento do topo quando sticky */
     top: 12px;
     z-index: 100;
     transition: box-shadow 0.3s ease, backdrop-filter 0.3s ease;
     backdrop-filter: blur(6px);
 }
 
-/* 🔸 Sombra suave ao rolar */
 body.scrolled header {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
@@ -85,7 +80,6 @@ nav {
     align-items: center;
     gap: 8px;
     flex-wrap: nowrap;
-    /* impede quebra de linha */
 }
 
 nav a,
@@ -94,7 +88,6 @@ nav .cart-btn {
     align-items: center;
     justify-content: center;
     white-space: nowrap;
-    /* garante que fiquem na mesma linha */
 }
 
 nav a {
@@ -118,7 +111,6 @@ nav .cart-btn {
     font-size: 20px;
     margin-left: 8px;
     flex-shrink: 0;
-    /* não deixar o botão encolher e sair do header */
 }
 
 nav .cart-count {
@@ -212,10 +204,8 @@ main {
 .catalog {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* 🔸 3 cards por linha */
     gap: 18px;
     justify-content: center;
-    /* 🔸 centraliza se sobrar espaço */
 }
 
 .card {
@@ -230,9 +220,7 @@ main {
     text-align: left;
     overflow: hidden;
     height: 520px;
-    /* 🔸 altura fixa para padronizar - aumentada */
     justify-content: space-between;
-    /* mantém equilíbrio interno */
 }
 
 .card:hover {
@@ -242,9 +230,7 @@ main {
 .card img {
     width: 100%;
     height: 300px;
-    /* 🔸 tamanho fixo visível e proporcional - aumentado */
     object-fit: cover;
-    /* recorta sem deformar */
     border-radius: 8px;
     display: block;
 }
@@ -265,7 +251,6 @@ main {
     justify-content: space-between;
     align-items: center;
     margin-top: auto;
-    /* empurra a meta para o final do card */
     flex-wrap: nowrap;
     gap: 8px;
 }
@@ -289,9 +274,6 @@ footer {
     color: var(--muted);
 }
 
-/* ============================
-   🔥 MODAL FIXO E RESPONSIVO
-   ============================ */
 .modal {
     position: fixed;
     inset: 0;
@@ -307,7 +289,6 @@ footer {
     display: flex;
 }
 
-/* 🔸 Caixa interna SEM ultrapassar a tela */
 .modal .box {
     background: #fff;
     border-radius: var(--radius);
@@ -321,30 +302,24 @@ footer {
     justify-content: center;
     box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
     overflow: hidden;
-    /* evita scroll externo */
 }
 
-/* ============================
-   🔥 IMAGEM FIXA NO MODAL
-   ============================ */
+
 .modal .carousel img {
     width: 100%;
     height: 280px;
-    /* 🔥 TAMANHO FIXO */
     object-fit: cover;
     border-radius: 10px;
 }
 
-/* ============================
-   🔥 DESCRIÇÃO COM TAMANHO DINÂMICO
-   ============================ */
+
 
 #modalDesc {
     flex-grow: 1;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 5;
-    /* 🔥 mostra até 5 linhas */
+    line-clamp: 5;
     -webkit-box-orient: vertical;
     font-size: 15px;
     transition: 0.25s ease;
@@ -352,10 +327,11 @@ footer {
 
 #modalDesc.expanded {
     -webkit-line-clamp: unset;
+    line-clamp: unset;
     overflow: auto;
 }
 
-/* botão "ver mais" */
+
 .more-btn {
     background: none;
     border: none;
@@ -366,25 +342,17 @@ footer {
     padding: 0;
 }
 
-/* ============================
-   🔥 PREÇO SEMPRE FIXO
-   ============================ */
+
 #modalPrice {
     font-size: 20px;
-    /* 🔥 TAMANHO FIXO */
     font-weight: 700;
     margin-top: 8px;
 }
 
-/* ============================
-   🔥 MOBILE
-   ============================ */
 @media (max-width: 600px) {
-
     .modal .box {
         max-width: 92vw;
         height: 82vh;
-        /* sempre cabe */
     }
 
     .modal .carousel img {
@@ -392,8 +360,12 @@ footer {
     }
 
     #modalDesc {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
         -webkit-line-clamp: 4;
+        line-clamp: 4;
         font-size: 14px;
+        overflow: hidden;
     }
 }
 
@@ -413,7 +385,6 @@ footer {
     border-radius: 8px;
     object-fit: cover;
     height: 420px;
-    /* 🔸 tamanho fixo */
     transition: opacity 0.3s ease;
 }
 
@@ -443,7 +414,6 @@ footer {
     right: 10px;
 }
 
-/* Card-specific (compact) carousel */
 .card .carousel {
     max-height: 280px;
     margin-bottom: 12px;
@@ -458,36 +428,27 @@ footer {
     padding: 4px 8px;
 }
 
-/* Botões específicos por página */
-/* Na página index: destacar link para cores */
 nav a[href="cores.html"] {
     background: var(--accent);
-    /* roxo */
     color: #fff;
 }
 
-/* Na página cores: destacar link para catálogo */
 nav a[href="index.html"] {
     background: var(--accent);
-    /* laranja padrão */
     color: #fff;
 }
 
-/* Ajustes responsivos para header e nav em dispositivos móveis */
 @media (max-width: 768px) {
     .catalog {
         grid-template-columns: 1fr;
-        /* 🔸 1 card por linha em tablet/mobile */
     }
 
     .card {
         height: 520px;
-        /* 🔸 manter altura fixa */
     }
 
     .card img {
         height: 300px;
-        /* 🔸 manter tamanho fixo das imagens */
     }
 }
 
@@ -516,16 +477,13 @@ nav a[href="index.html"] {
 
     .catalog {
         grid-template-columns: 1fr;
-        /* 🔸 1 card por linha */
     }
 
     .card {
         height: 520px;
-        /* 🔸 manter altura fixa */
     }
 
     .card img {
         height: 300px;
-        /* 🔸 manter tamanho fixo das imagens */
     }
 }

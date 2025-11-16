@@ -7,16 +7,9 @@ const cat = document.getElementById('filterCat');
 let products = [];
 let cart = [];
 
-// Detectar se estamos em cores.html (variável global set no cores.html)
 const isColorsPage = typeof window.isColorsPage !== 'undefined' ? window.isColorsPage : false;
 const dataFile = isColorsPage ? 'cores.json' : 'produtos.json';
 
-// Helper: determina se uma cor deve ser considerada "Disponível".
-// Tentamos suportar vários formatos usados em JSONs diferentes:
-// - campo booleano `available`
-// - campo `status` com string "Indisponível"/"Indisponivel"
-// - campo `price` que contenha a palavra "indispon" quando indisponível
-// Se não houver marcador explícito, tratamos como disponível (compatível com UI atual).
 function isColorAvailable(p) {
     if (p == null) return false;
     if (Object.prototype.hasOwnProperty.call(p, 'available')) {
@@ -31,7 +24,6 @@ function isColorAvailable(p) {
         const s = String(p.price).toLowerCase();
         return !s.includes('indispon');
     }
-    // fallback: se não há price nem marker, considere disponível (mantém comportamento atual)
     return !Object.prototype.hasOwnProperty.call(p, 'price') || p.price === '' || p.price === null;
 }
 
@@ -53,20 +45,17 @@ function render() {
     const term = search ? search.value.toLowerCase() : '';
     const c = cat ? cat.value : '';
     grid.innerHTML = '';
-    // filtra primeiro
     const filtered = products.filter(p => {
         const matchTerm = p.name.toLowerCase().includes(term) || p.desc.toLowerCase().includes(term);
         const matchCat = !c || p.category === c;
         return matchTerm && matchCat;
     });
 
-    // se estamos na página de cores, ordene colocando disponíveis antes das indisponíveis
     if (isColorsPage) {
         filtered.sort((a, b) => {
             const aa = isColorAvailable(a) ? 1 : 0;
             const bb = isColorAvailable(b) ? 1 : 0;
             if (aa === bb) return a.name.localeCompare(b.name);
-            // quando aa > bb (a disponível, b não) queremos que a venha antes => retornar -1
             return aa > bb ? -1 : 1;
         });
     }
@@ -75,10 +64,8 @@ function render() {
         const el = document.createElement('div');
         el.className = 'card';
 
-        // Prepare images array (support legacy `img` field)
         const imgs = p.images && p.images.length ? p.images : (p.img ? [p.img] : []);
 
-        // build carousel markup (compact for card)
         let carouselHtml = '';
         if (imgs.length > 0) {
             const first = imgs[0];
@@ -90,7 +77,6 @@ function render() {
         </div>`;
         }
 
-        // mostrar disponibilidade em cards de cores, caso contrário mostrar material
         const chipText = isColorsPage ? (p.price || 'Disponível') : (p.material ? p.material.toUpperCase() : '');
         el.innerHTML = `
             ${carouselHtml}
@@ -101,23 +87,19 @@ function render() {
                 <button class="btn secondary" data-id="${p.id}">Ver</button>
             </div>`;
 
-        // store images on element for quick access in the carousel controller
         el.__images = imgs;
         grid.appendChild(el);
     });
 }
 
-// Adicionar listeners apenas se os elementos existirem
 if (search) search.addEventListener('input', render);
 if (cat) cat.addEventListener('input', render);
 
-// Controle de carrossel nos cards via event delegation
 grid.addEventListener('click', (e) => {
     const btnPrev = e.target.closest('.carousel .prev');
     const btnNext = e.target.closest('.carousel .next');
     if (!btnPrev && !btnNext) return;
 
-    // não deixe o clique propagar pra outros handlers (ex: abrir modal)
     e.stopPropagation();
 
     const carousel = e.target.closest('.carousel');
@@ -153,7 +135,6 @@ const prevBtn = document.querySelector('.carousel .prev');
 const nextBtn = document.querySelector('.carousel .next');
 let currentImageIndex = 0;
 
-// Função para adicionar ao carrinho (aplica apenas em index.html e se o botão existir)
 if (!isColorsPage && addToCartBtn) {
     addToCartBtn.addEventListener('click', () => {
         if (!currentProduct) return;
@@ -180,42 +161,42 @@ document.addEventListener('click', e => {
     currentImageIndex = 0;
     modal.classList.add('show');
 
-    // Se o produto tiver várias imagens
     if (p.images && p.images.length > 0) {
         carouselImg.src = p.images[0];
     } else {
-        carouselImg.src = p.img; // compatível com produtos antigos
+        carouselImg.src = p.img;
     }
 
     modalName.textContent = p.name;
     modalDesc.textContent = p.desc;
 
-    // Exibir campos específicos conforme o tipo de item
     if (isColorsPage) {
-        // Em cores.html
         if (modalHex) {
             modalHex.style.backgroundColor = p.hex || '#ddd';
             modalHex.parentElement.style.display = 'block';
         }
     } else {
-        // Em index.html (produtos)
         if (modalHex) modalHex.parentElement.style.display = 'none';
     }
 
     modalPrice.textContent = p.price;
 
-    // Botão ver mais/menos: só aparece se texto for longo e não estamos em cores.html
     const moreBtn = document.getElementById('moreBtn');
     if (moreBtn) {
-        if (isColorsPage || !p.desc || p.desc.length < 120) {
-            moreBtn.style.display = 'none';
-        } else {
-            moreBtn.style.display = 'inline-block';
-        }
+        moreBtn.textContent = 'Ver mais';
+        modalDesc.classList.remove('expanded');
+        
+        setTimeout(() => {
+            const isTextTruncated = modalDesc.scrollHeight > modalDesc.clientHeight;
+            if (isColorsPage || !isTextTruncated) {
+                moreBtn.style.display = 'none';
+            } else {
+                moreBtn.style.display = 'inline-block';
+            }
+        }, 0);
     }
 });
 
-// Navegação do carrossel
 prevBtn.onclick = () => {
     if (!currentProduct.images) return;
     currentImageIndex = (currentImageIndex - 1 + currentProduct.images.length) % currentProduct.images.length;
@@ -236,7 +217,6 @@ function updateCartCount() {
 document.getElementById('closeModal').onclick = () => modal.classList.remove('show');
 modal.onclick = e => { if (e.target === modal) modal.classList.remove('show'); };
 
-// Carrinho modal (apenas em index.html)
 if (!isColorsPage) {
     const cartModal = document.getElementById('cartModal');
     const cartItems = document.getElementById('cartItems');
@@ -257,7 +237,6 @@ if (!isColorsPage) {
             return;
         }
 
-        // Renderiza os itens
         cartItems.innerHTML = cart.map((p, i) => `
         <div class="cart-item" data-index="${i}" style="display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #eee;padding:6px 0;">
           <span>${p.name}</span>
@@ -265,12 +244,10 @@ if (!isColorsPage) {
         </div>
       `).join('');
 
-        // Calcula e mostra o total
         const total = cart.reduce((sum, p) => sum + parseFloat(p.price.replace(/[^\d.-]/g, '')), 0);
         document.getElementById('cartTotal').textContent = `Total: R$ ${total.toFixed(2)}`;
     }
 
-    // Adiciona escuta de eventos no container (event delegation)
     cartItems.addEventListener('click', e => {
         if (e.target.classList.contains('remove-item')) {
             const index = e.target.closest('.cart-item').dataset.index;
@@ -288,13 +265,11 @@ if (!isColorsPage) {
     };
 }
 
-// Controle de carrossel nos cards via event delegation
 grid.addEventListener('click', (e) => {
     const btnPrev = e.target.closest('.carousel .prev');
     const btnNext = e.target.closest('.carousel .next');
     if (!btnPrev && !btnNext) return;
 
-    // não deixe o clique propagar pra outros handlers (ex: abrir modal)
     e.stopPropagation();
 
     const carousel = e.target.closest('.carousel');
