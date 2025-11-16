@@ -185,7 +185,7 @@ document.addEventListener('click', e => {
     if (moreBtn) {
         moreBtn.textContent = 'Ver mais';
         modalDesc.classList.remove('expanded');
-        
+
         setTimeout(() => {
             const isTextTruncated = modalDesc.scrollHeight > modalDesc.clientHeight;
             if (isColorsPage || !isTextTruncated) {
