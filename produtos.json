@@ -15,7 +15,7 @@
             "mtg",
             "deckbox"
         ],
-        "price": "R$120.00"
+        "price": "R$140.00"
     },
     {
         "id": "p02",
@@ -33,7 +33,7 @@
             "rpg",
             "deckbox"
         ],
-        "price": "R$120.00"
+        "price": "R$200.00"
     },
     {
         "id": "p03",
@@ -51,7 +51,7 @@
             "mtg",
             "deckbox"
         ],
-        "price": "R$70.00"
+        "price": "R$90.00"
     },
     {
         "id": "p04",
@@ -61,7 +61,7 @@
             "imagens/p04/2.webp",
             "imagens/p04/3.webp"
         ],
-        "desc": "Escolha o dado (d20, d12, d10, d8, d6, d4), escolha o tipo de gráfico (em relevo ou nivelado) e escolha a cor que mais combina com você.",
+        "desc": "Escolha o tipo gráfico (em relevo ou nivelado) e escolha a cor que mais combina com você.",
         "size": "30 mm",
         "material": "pla",
         "category": "RPG",
@@ -70,9 +70,25 @@
             "dado",
             "mtg"
         ],
-        "price": "R$12.00 a unidade ou R$2.50 o conjunto"
+        "price": "R$20.00 o conjunto"
+    },
+    {
+            "id": "p05",
+        "name": "Moedas de ouro de Pirata",
+        "images": [
+            "imagens/p05/1.webp",
+            "imagens/p05/2.webp",
+            "imagens/p05/3.webp"
+        ],
+        "desc": "Escolha a quantidade de moedas de ouro de pirata para suas aventuras de RPG. Cada moeda mede aproximadamente 43 mm de diâmetro e é feita de PLA Dourado. Perfeitas para adicionar um toque autêntico às suas campanhas.",
+        "size": "43 mm",
+        "material": "pla",
+        "category": "RPG",
+        "tags": [
+            "rpg"
+        ],
+        "price": "R$03.00 a unidade"
     }
-
 
 
 

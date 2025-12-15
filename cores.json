@@ -191,7 +191,7 @@
         "hex": "#ffff00",
         "material": "PLA",
         "category": "cor",
-        "price": "Indisponível"
+        "price": "Disponível"
     },
 
     {
@@ -206,7 +206,7 @@
         "hex": "#4a2500",
         "material": "PLA",
         "category": "cor",
-        "price": "Indisponível"
+        "price": "Disponível"
     },
 
     {
@@ -221,7 +221,7 @@
         "hex": "#000000",
         "material": "PLA",
         "category": "cor",
-        "price": "Indisponível"
+        "price": "Disponível"
     },
 
     {
@@ -236,7 +236,7 @@
         "hex": "#ffb6c1",
         "material": "PLA",
         "category": "cor",
-        "price": "Indisponível"
+        "price": "Disponível"
     },
 
     {
@@ -266,7 +266,7 @@
         "hex": "#4ff4a2",
         "material": "PLA",
         "category": "cor",
-        "price": "Indisponível"
+        "price": "Disponível"
     },
 
     {
@@ -281,7 +281,7 @@
         "hex": "#cc0000",
         "material": "PLA",
         "category": "cor",
-        "price": "Indisponível"
+        "price": "Disponível"
     },
 
     {
@@ -296,7 +296,7 @@
         "hex": "#ffffff",
         "material": "PLA",
         "category": "cor",
-        "price": "Indisponível"
+        "price": "Disponível"
     },
 
     {
@@ -311,7 +311,7 @@
         "hex": "#ffa500",
         "material": "PLA",
         "category": "cor",
-        "price": "Indisponível"
+        "price": "Disponível"
     },
 
     {
@@ -326,7 +326,7 @@
         "hex": "#ead0b4",
         "material": "PLA",
         "category": "cor",
-        "price": "Indisponível"
+        "price": "Disponível"
     },
 
     {
@@ -356,6 +356,21 @@
         "hex": "#0000b3",
         "material": "PLA",
         "category": "cor",
-        "price": "Indisponível"
+        "price": "Disponível"
+    },
+
+    {
+        "id": "cor25",
+        "name": "Dourado",
+        "images": [
+            "imagens/cores/dourado-1.webp",
+            "imagens/cores/dourado-2.webp",
+            "imagens/cores/dourado-3.webp"
+        ],
+        "desc": "Dourado intenso e brilhante, perfeito para peças que desejam um toque de luxo.",
+        "hex": "#ffd700",
+        "material": "PLA",
+        "category": "cor",
+        "price": "Disponível"
     }
 ]

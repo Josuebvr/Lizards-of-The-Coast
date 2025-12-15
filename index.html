@@ -24,7 +24,7 @@
             <nav>
                 <!-- Links de navegação -->
                 <a href="#catalog" class="cta">Catálogo</a>
-                <a href="cores.html">Cores</a>
+                <!-- <a href="cores.html">Cores</a> -->
                 <!-- Botão do carrinho com contador -->
                 <button class="cart-btn" id="openCart">🛒<span class="cart-count" id="cartCount">0</span></button>
             </nav>
@@ -103,6 +103,11 @@
             <p id="modalDesc"></p>
             <button class="more-btn" id="moreBtn">Ver mais</button>
             <p><strong>Preço:</strong> <span id="modalPrice"></span></p>
+            <div id="quantityContainer" style="display: none; margin: 12px 0; align-items: center; gap: 8px;">
+                <label for="quantityInput" style="font-weight: 600;">Quantidade:</label>
+                <input type="number" id="quantityInput" min="1" value="1"
+                    style="width: 60px; padding: 6px; border: 1px solid #ddd; border-radius: 8px;">
+            </div>
             <button id="addToCart" class="btn primary">Adicionar ao Carrinho</button>
         </div>
     </div>

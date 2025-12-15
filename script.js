@@ -184,6 +184,8 @@ const modalSize = document.getElementById('modalSize');
 const modalPrice = document.getElementById('modalPrice');
 const modalHex = document.getElementById('modalHex');
 const addToCartBtn = document.getElementById('addToCart');
+const quantityContainer = document.getElementById('quantityContainer');
+const quantityInput = document.getElementById('quantityInput');
 let currentProduct = null;
 
 // Controles do carrossel dentro do modal
@@ -196,7 +198,9 @@ let currentImageIndex = 0;
 if (!isColorsPage && addToCartBtn) {
     addToCartBtn.addEventListener('click', () => {
         if (!currentProduct) return;
-        cart.push(currentProduct);
+        const quantity = quantityInput ? parseInt(quantityInput.value) || 1 : 1;
+        const productToAdd = { ...currentProduct, quantity };
+        cart.push(productToAdd);
         updateCartCount();
         renderCart();
         modal.classList.remove('show');
@@ -245,6 +249,16 @@ document.addEventListener('click', e => {
     }
 
     if (modalPrice) modalPrice.textContent = p.price;
+
+    // Mostrar campo de quantidade para produtos que permitem (moedas)
+    if (quantityContainer && quantityInput) {
+        if (p.id === 'p05') { // produto de moedas
+            quantityContainer.style.display = 'flex';
+            quantityInput.value = '1';
+        } else {
+            quantityContainer.style.display = 'none';
+        }
+    }
 
     const moreBtn = document.getElementById('moreBtn');
     if (moreBtn) {
@@ -331,14 +345,29 @@ if (!isColorsPage) {
             return;
         }
 
-        cartItems.innerHTML = cart.map((p, i) => `
-        <div class="cart-item" data-index="${i}" style="display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #eee;padding:6px 0;">
-          <span>${p.name}</span>
-          <button class="remove-item" style="background:none;border:none;color:#f97316;cursor:pointer;">Remover</button>
-        </div>
-      `).join('');
+        cartItems.innerHTML = cart.map((p, i) => {
+            const quantity = p.quantity || 1;
+            const priceText = p.price.replace(/[^\d.-]/g, '');
+            const priceNum = parseFloat(priceText) || 0;
+            const subtotal = priceNum * quantity;
+            const displayName = quantity > 1 ? `${p.name} (x${quantity})` : p.name;
 
-        const total = cart.reduce((sum, p) => sum + parseFloat(p.price.replace(/[^\d.-]/g, '')), 0);
+            return `
+        <div class="cart-item" data-index="${i}" style="display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #eee;padding:6px 0;">
+          <div style="flex:1;">
+            <span>${displayName}</span>
+            ${quantity > 1 ? `<br><span style="font-size: 12px; color: #666;">Subtotal: R$ ${subtotal.toFixed(2)}</span>` : ''}
+          </div>
+          <button class="remove-item" style="background:none;border:none;color:#f97316;cursor:pointer;">Remover</button>
+        </div>`;
+        }).join('');
+
+        const total = cart.reduce((sum, p) => {
+            const quantity = p.quantity || 1;
+            const priceText = p.price.replace(/[^\d.-]/g, '');
+            const priceNum = parseFloat(priceText) || 0;
+            return sum + (priceNum * quantity);
+        }, 0);
         const totalEl = document.getElementById('cartTotal');
         if (totalEl) totalEl.textContent = `Total: R$ ${total.toFixed(2)}`;
     }
@@ -361,7 +390,13 @@ if (!isColorsPage) {
         sendCartBtn.onclick = () => {
             if (cart.length === 0) return;
             const msg = "Olá! Gostaria de pedir os seguintes produtos:\n\n" +
-                cart.map(p => `- ${p.name}`).join('\n');
+                cart.map(p => {
+                    const quantity = p.quantity || 1;
+                    if (quantity > 1) {
+                        return `- ${quantity}x ${p.name}`;
+                    }
+                    return `- ${p.name}`;
+                }).join('\n');
             window.open(`https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(msg)}`, '_blank');
         };
     }
