@@ -88,6 +88,23 @@
             "rpg"
         ],
         "price": "R$03.00 a unidade"
+    },
+    {
+            "id": "p06",
+        "name": "Caixa para Deck de Cartas MTG",
+        "images": [
+            "imagens/p06/1.webp",
+            "imagens/p06/2.webp",
+            "imagens/p06/3.webp"
+        ],
+        "desc": "Esta é uma caixa para baralho que comporta mais de 100 cartas com sleeves. Feita para decks de Commander de Magic The Gathering, mas pode ser facilmente utilizada para qualquer outra coisa. As tampas encaixam-se no lugar e uma caixa de baralho completa pode ser segurada de cabeça para baixo sem se desmontar ou com as cartas fazendo barulho lá dentro. Elas são mais fáceis de abrir puxando-se suavemente por um lado e, em seguida, abrindo-as completamente.",
+        "size": "69 mm",
+        "material": "pla",
+        "category": "MTG",
+        "tags": [
+            "mtg"
+        ],
+        "price": "R$30.00 a unidade"
     }
 
 
