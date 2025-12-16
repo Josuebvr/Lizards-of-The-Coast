@@ -243,13 +243,13 @@ main {
     transform: translateX(-50%) translateY(-2px);
 }
 
-.hero-tab[aria-expanded="true"] {
-    /* seta para cima estará definida via conteúdo textual (▲) - mantemos posição sem rotação */
-}
+/* estado visual do botão controlado pelo conteúdo e pelo hover; sem regras específicas para aria-expanded */
 
 @media (max-width: 600px) {
     .hero-wrapper.collapsed .hero {
-        max-height: 48px;
+        max-height: 96px;
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
 
     .hero-tab {
