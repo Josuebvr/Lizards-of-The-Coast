@@ -193,6 +193,72 @@ main {
     text-align: center;
 }
 
+/* Wrapper para permitir colapsar o hero e mostrar apenas uma aba */
+.hero-wrapper {
+    position: relative;
+    transition: box-shadow 0.3s ease;
+}
+
+.hero-wrapper .hero {
+    transition: max-height 0.45s ease, padding 0.35s ease;
+    max-height: 2000px;
+    /* estado expandido por padrão */
+}
+
+/* Estado colapsado: reduzir o hero a uma pequena faixa */
+.hero-wrapper.collapsed .hero {
+    max-height: 56px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    overflow: hidden;
+}
+
+/* Quando colapsado, escondemos tudo dentro do hero exceto o título (h2) */
+.hero-wrapper.collapsed .hero>*:not(h2) {
+    display: none;
+}
+
+/* Aba/Tab que fica visível quando o hero está colapsado */
+.hero-tab {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -18px;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    width: 44px;
+    height: 36px;
+    border-radius: 999px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    transition: transform 0.2s ease, background 0.15s ease;
+    z-index: 50;
+}
+
+.hero-tab:hover {
+    transform: translateX(-50%) translateY(-2px);
+}
+
+.hero-tab[aria-expanded="true"] {
+    /* seta para cima estará definida via conteúdo textual (▲) - mantemos posição sem rotação */
+}
+
+@media (max-width: 600px) {
+    .hero-wrapper.collapsed .hero {
+        max-height: 48px;
+    }
+
+    .hero-tab {
+        bottom: -16px;
+        width: 40px;
+        height: 34px;
+    }
+}
+
 .hero h2 {
     margin: 0;
     font-size: 26px;

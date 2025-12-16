@@ -449,3 +449,49 @@ if (moreBtn) {
     };
 }
 
+
+// -------------------------------
+// Toggle do Hero (aba que oculta/mostra o hero)
+// -------------------------------
+const heroWrapper = document.getElementById('heroWrapper');
+const heroToggleTab = document.getElementById('heroToggleTab');
+
+function applyHeroState(collapsed) {
+    if (!heroWrapper) return;
+    if (collapsed) {
+        heroWrapper.classList.add('collapsed');
+    } else {
+        heroWrapper.classList.remove('collapsed');
+    }
+    if (heroToggleTab) {
+        // aria-expanded indica se está expandido
+        heroToggleTab.setAttribute('aria-expanded', String(!collapsed));
+        // quando colapsado (retido) deve apontar para baixo (▼);
+        // quando aberto, apontar para cima (▲)
+        heroToggleTab.textContent = collapsed ? '▼' : '▲';
+    }
+}
+
+// Inicializa estado a partir do localStorage
+try {
+    const saved = localStorage.getItem('heroCollapsed');
+    if (saved !== null) {
+        applyHeroState(saved === 'true');
+    }
+} catch (err) {
+    // se localStorage falhar, ignoramos
+}
+
+if (heroToggleTab) {
+    heroToggleTab.addEventListener('click', () => {
+        if (!heroWrapper) return;
+        const isCollapsed = heroWrapper.classList.toggle('collapsed');
+        applyHeroState(isCollapsed);
+        try { localStorage.setItem('heroCollapsed', String(isCollapsed)); } catch (e) { }
+        if (!isCollapsed) {
+            // quando expandir, rolar para mostrar o hero por completo
+            heroWrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    });
+}
+
