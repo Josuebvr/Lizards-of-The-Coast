@@ -301,21 +301,7 @@ function showProductModal(p) {
         }
     }
 
-    const moreBtn = document.getElementById('moreBtn');
-    if (moreBtn) {
-        moreBtn.textContent = 'Ver mais';
-        modalDesc.classList.remove('expanded');
-
-        // Deferimos a checagem de truncamento para o próximo ciclo de evento
-        setTimeout(() => {
-            const isTextTruncated = modalDesc.scrollHeight > modalDesc.clientHeight;
-            if (isColorsPage || !isTextTruncated) {
-                moreBtn.style.display = 'none';
-            } else {
-                moreBtn.style.display = 'inline-block';
-            }
-        }, 0);
-    }
+    // descrição agora é exibida por completo; não há botão "Ver mais"
 }
 
 // Verifica a URL para ?product=ID e abre o modal correspondente
@@ -362,6 +348,15 @@ function updateCartCount() {
 const closeModalBtn = document.getElementById('closeModal');
 if (closeModalBtn) closeModalBtn.onclick = () => modal.classList.remove('show');
 if (modal) modal.onclick = e => { if (e.target === modal) modal.classList.remove('show'); };
+
+// Fechar modais com a tecla Escape (aplica ao modal de produto e ao carrinho)
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' || e.key === 'Esc') {
+        const cartModalEl = document.getElementById('cartModal');
+        if (modal) modal.classList.remove('show');
+        if (cartModalEl) cartModalEl.classList.remove('show');
+    }
+});
 
 
 /*
@@ -489,17 +484,6 @@ grid.addEventListener('click', (e) => {
 loadProducts();
 
 
-// Botão "Ver mais" dentro do modal (expande/contrai descrição)
-const moreBtn = document.getElementById("moreBtn");
-if (moreBtn) {
-    moreBtn.onclick = () => {
-        if (!modalDesc) return;
-        modalDesc.classList.toggle("expanded");
-        moreBtn.textContent = modalDesc.classList.contains("expanded")
-            ? "Ver menos"
-            : "Ver mais";
-    };
-}
 
 
 // -------------------------------

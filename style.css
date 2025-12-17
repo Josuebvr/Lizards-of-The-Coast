@@ -415,7 +415,7 @@ footer {
 .modal .box {
     background: #fff;
     border-radius: var(--radius);
-    padding: 20px;
+    padding: 28px 20px 36px;
     max-width: 480px;
     max-height: 90vh;
     margin: auto;
@@ -425,6 +425,7 @@ footer {
     justify-content: center;
     box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
     overflow: hidden;
+    position: relative;
 }
 
 .modal .carousel img {
@@ -432,6 +433,55 @@ footer {
     height: 280px;
     object-fit: cover;
     border-radius: 10px;
+}
+
+/* Botão de fechar no canto superior direito do modal */
+.modal .box .close-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--muted);
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s, transform 0.12s;
+}
+
+.modal .box .close-btn:hover {
+    background: rgba(0, 0, 0, 0.04);
+    color: var(--text);
+    transform: translateY(-1px);
+}
+
+/* Espaçamento entre preço, ações e base do modal */
+#modalPrice {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 12px;
+    margin-bottom: 14px;
+}
+
+.modal .box .actions {
+    margin-top: 12px;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.modal .box .actions .btn {
+    min-width: 140px;
+}
+
+/* Espaço extra no final do modal para rolagem infinita e evitar conteúdo colado na borda */
+.modal .box {
+    padding-bottom: 48px;
 }
 
 #modalDesc {
