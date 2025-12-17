@@ -264,7 +264,7 @@ async function readFileFromGitHub(filePath) {
         if (response.status === 404) return null;
         if (!response.ok) {
             let body = '';
-            try { body = await response.text(); } catch (e) {}
+            try { body = await response.text(); } catch (e) { }
             console.error('Falha ao ler do GitHub', response.status, body);
             return null;
         }
@@ -317,7 +317,7 @@ async function writeFileToGitHub(filePath, content, message) {
 
         if (!response.ok) {
             let errBody = '';
-            try { errBody = await response.text(); } catch (e) {}
+            try { errBody = await response.text(); } catch (e) { }
             console.error('Falha ao escrever no GitHub', response.status, errBody);
             return false;
         }
