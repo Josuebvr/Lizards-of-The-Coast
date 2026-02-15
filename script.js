@@ -335,7 +335,6 @@ if (nextBtn) {
 
 
 /*
- * updateCartCount()
  * - Atualiza o contador de itens do carrinho exibido na UI.
  */
 function updateCartCount() {
