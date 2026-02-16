@@ -108,14 +108,16 @@ body.scrolled header {
     width: 56px;
     height: 56px;
     border-radius: 12px;
-    background: linear-gradient(135deg, var(--accent), #ffb77a);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    color: white;
-    font-size: 20px;
-    font-family: Georgia, serif;
+    overflow: hidden;
+    flex-shrink: 0;
+    background: transparent;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .brand h1 {

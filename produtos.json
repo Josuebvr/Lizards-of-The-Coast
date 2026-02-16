@@ -2,148 +2,65 @@
     {
         "id": "p01",
         "name": "Caixa para Deck de Commander - Spellbook",
-        "images": [
-            "imagens/p01/1.webp",
-            "imagens/p01/2.webp",
-            "imagens/p01/3.webp"
-        ],
+        "images": "imagens/p01/1.webp,imagens/p01/2.webp,imagens/p01/3.webp",
         "desc": "A caixa acomoda o seguinte: Zona de Comando que exibe seu Comandante como parte da capa do livro, 100 cartas com sleeves, 50 cartas/tokens sem sleeve ou 20-30 com sleeve, 16x D6 (dados de 16mm), 6x D20 (dados de 22mm) e 4 canetas para quadro branco.",
-        "size": "15 cm",
-        "material": "pla",
         "category": "MTG",
-        "tags": [
-            "mtg",
-            "deckbox"
-        ],
         "price": "R$150.00"
     },
     {
         "id": "p02",
         "name": "Kit Definitivo para Jogadores de DND",
-        "images": [
-            "imagens/p02/1.webp",
-            "imagens/p02/2.webp",
-            "imagens/p02/3.webp"
-        ],
+        "images": "imagens/p02/1.webp,imagens/p02/2.webp,imagens/p02/3.webp",
         "desc": "Portas com rastreadores para tudo o que você precisa para uma sessão completa de D&D, sem ficha de personagem extra, tudo pronto para usar, configurado em 6 segundos",
-        "size": "10cm",
-        "material": "pla",
         "category": "RPG",
-        "tags": [
-            "rpg",
-            "deckbox"
-        ],
         "price": "R$200.00"
     },
     {
         "id": "p03",
         "name": "Caixa de Deck MTG Commander com Sideboard",
-        "images": [
-            "imagens/p03/1.webp",
-            "imagens/p03/2.webp",
-            "imagens/p03/3.webp"
-        ],
+        "images": "imagens/p03/1.webp,imagens/p03/2.webp,imagens/p03/3.webp",
         "desc": "Caixa para Deck de MTG. O formato comporta facilmente mais de 100 cards com sleeves e também possui um compartimento lateral para tokens, dados, contadores de vida e etcs",
-        "size": "25 cm",
-        "material": "pla",
         "category": "MTG",
-        "tags": [
-            "mtg",
-            "deckbox"
-        ],
         "price": "R$90.00"
     },
     {
         "id": "p04",
         "name": "Conjunto de dados - D20, D12, D10, D8, D6, D4",
-        "images": [
-            "imagens/p04/1.webp",
-            "imagens/p04/2.webp",
-            "imagens/p04/3.webp"
-        ],
+        "images": "imagens/p04/1.webp,imagens/p04/2.webp,imagens/p04/3.webp",
         "desc": "Escolha o tipo gráfico (em relevo ou nivelado) e escolha a cor que mais combina com você.",
-        "size": "30 mm",
-        "material": "pla",
         "category": "RPG",
-        "tags": [
-            "rpg",
-            "dado",
-            "mtg"
-        ],
         "price": "R$10.00 o conjunto"
     },
     {
-            "id": "p05",
+        "id": "p05",
         "name": "Moedas de ouro de Pirata",
-        "images": [
-            "imagens/p05/1.webp",
-            "imagens/p05/2.webp",
-            "imagens/p05/3.webp"
-        ],
+        "images": "imagens/p05/1.webp,imagens/p05/2.webp,imagens/p05/3.webp",
         "desc": "Escolha a quantidade de moedas de ouro de pirata para suas aventuras de RPG. Cada moeda mede aproximadamente 43 mm de diâmetro e é feita de PLA Dourado. Perfeitas para adicionar um toque autêntico às suas campanhas.",
-        "size": "43 mm",
-        "material": "pla",
         "category": "RPG",
-        "tags": [
-            "rpg"
-        ],
         "price": "R$3.00 a unidade"
     },
     {
-            "id": "p06",
+        "id": "p06",
         "name": "Caixa para Deck de Cartas MTG",
-        "images": [
-            "imagens/p06/1.webp",
-            "imagens/p06/2.webp",
-            "imagens/p06/3.webp"
-        ],
+        "images": "imagens/p06/1.webp,imagens/p06/2.webp,imagens/p06/3.webp",
         "desc": "Comporta mais de 100 cartas com sleeves. Feita para decks de Commander de Magic, mas pode ser facilmente utilizada para qualquer outra coisa. As tampas encaixam-se perfeitamente no lugar e pode ser segurada de cabeça para baixo sem se desmontar ou com as cartas fazendo barulho lá dentro.",
-        "size": "69 mm",
-        "material": "pla",
         "category": "MTG",
-        "tags": [
-            "mtg"
-        ],
         "price": "R$30.00"
     },
     {
-            "id": "p07",
+        "id": "p07",
         "name": "Arca da Aliança",
-        "images": [
-            "imagens/p07/1.webp",
-            "imagens/p07/2.webp",
-            "imagens/p07/3.webp"
-        ],
+        "images": "imagens/p07/1.webp,imagens/p07/2.webp,imagens/p07/3.webp",
         "desc": "Uma peça de museu! Ou em seu escritório. Ou talvez na lareira. Quem sabe?! Cabe totalmente a você onde exibir (ou guardar) a Arca da Aliança. Esperançosamente, se você está se dando ao trabalho de comprar isso, não está considerando embalá-la e armazená-la em um depósito.",
-        "size": "122 mm",
-        "material": "pla",
         "category": "decoracoes",
-        "tags": [
-            "mtg"
-        ],
         "price": "R$70.00"
     },
     {
-            "id": "p08",
+        "id": "p08",
         "name": "Caixa para Deck Commander - Satoru Umezawa",
-        "images": [
-            "imagens/p08/1.webp",
-            "imagens/p08/2.webp",
-            "imagens/p08/3.webp"
-        ],
+        "images": "imagens/p08/1.webp,imagens/p08/2.webp,imagens/p08/3.webp",
         "desc": "Esta caixa de deck Commander personalizada foi criada com cuidado e precisão para proteger seu precioso material em papelão.",
-        "size": "113 mm",
-        "material": "pla",
         "category": "MTG",
-        "tags": [
-            "mtg"
-        ],
         "price": "R$70.00"
     }
-
-
-
-
-
-    
 ]

@@ -53,6 +53,15 @@ async function loadProducts() {
             throw new Error(`Erro ao carregar ${dataFile}: ${res.status}`);
         }
         products = await res.json();
+
+        // Normaliza 'images' permitindo que seja uma string separada por vírgulas
+        products = products.map(p => {
+            if (p && p.images && typeof p.images === 'string') {
+                p.images = p.images.split(',').map(s => s.trim()).filter(Boolean);
+            }
+            return p;
+        });
+
         render();
         // se a página foi carregada com ?product=ID, abrir esse produto
         try { checkUrlProduct(); } catch (e) { }
