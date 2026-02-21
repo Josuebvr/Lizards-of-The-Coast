@@ -78,5 +78,45 @@
         "desc": "Este kit destacável permite que você monte seu próprio esqueleto de Tiranossauro. Ao apagar das luzes, o grande Tyrannosaurus rex revela sua natureza luminescente, emitindo um brilho que torna qualquer ambiente mais divertido.",
         "category": "decoracoes",
         "price": "R$70.00"
+    },
+        {
+        "id": "p11",
+        "name": "O Descanso do Controle",
+        "images": "imagens/p11/1.webp,imagens/p11/2.webp,imagens/p11/3.webp",
+        "desc": "Projetado com encaixe milimétrico para o controle de Xbox, ele garante que seu controle esteja sempre pronto, elevando a estética do seu setup ao nível profissional.",
+        "category": "decoracoes",
+        "price": "R$70.00"
+    },
+        {
+        "id": "p12",
+        "name": "O Olhar de Mordor",
+        "images": "imagens/p12/1.webp,imagens/p12/2.webp,imagens/p12/3.webp",
+        "desc": "Este quadro simboliza o olhar vigilante de Mordor, um símbolo de poder e vigilância que pode ser usado como peça decorativa ou como item de exposição para o jogador que deseja representar a autoridade do senhor sombrio.",
+        "category": "decoracoes",
+        "price": "R$70.00"
+    },
+    {
+        "id": "p13",
+        "name": "Deck Box - Núcleo Giratório",
+        "images": "imagens/p13/1.webp,imagens/p13/2.webp,imagens/p13/3.webp",
+        "desc": "Esta Deck Box é uma proeza de design funcional que transforma o acesso ao seu deck em um ritual de maestria. Com uma tampa giratória e um expositor dedicado que coloca seu comandante em posição de honra, É a solução definitiva para o jogador que busca impacto visual.",
+        "category": "MTG",
+        "price": "R$70.00"
+    },
+        {
+        "id": "p14",
+        "name": "Deck Box - O Queijo",
+        "images": "imagens/p14/1.webp,imagens/p14/2.webp,imagens/p14/3.webp",
+        "desc": "Com um design que evoca a astúcia e a natureza implacável de Vren, o Implacável, este deckbox de queijo é o disfarce ideal para esconder o poder de uma horda crescente.",
+        "category": "MTG",
+        "price": "R$70.00"
+    },
+        {
+        "id": "p15",
+        "name": "Curvas de Sinfonia",
+        "images": "imagens/p15/1.webp,imagens/p15/2.webp,imagens/p15/3.webp",
+        "desc": "Com curvas fluidas e contínuas, este suporte para fones de ouvido protege a estrutura de seu equipamento enquanto o exibe como uma verdadeira obra de arte moderna. É o repouso ideal para o seu headset, oferecendo uma presença minimalista e sofisticada que transforma qualquer ambiente de trabalho",
+        "category": "decoracoes",
+        "price": "R$70.00"
     }
 ]
