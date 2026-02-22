@@ -118,5 +118,61 @@
         "desc": "Com curvas fluidas e contínuas, este suporte para fones de ouvido protege a estrutura de seu equipamento enquanto o exibe como uma verdadeira obra de arte moderna. É o repouso ideal para o seu headset, oferecendo uma presença minimalista e sofisticada que transforma qualquer ambiente de trabalho",
         "category": "decoracoes",
         "price": "R$70.00"
+    },
+        {
+        "id": "p16",
+        "name": "O Legado de Bloomburrow",
+        "images": "imagens/p16/1.webp,imagens/p16/2.webp,imagens/p16/3.webp",
+        "desc": "Estas dezesseis fichas exclusivas são fragmentos de um mundo onde o pequeno se torna heróico. Com ilustrações que dão vida a criaturas clássicas e aos novos protagonistas de Bloomburrow, cada token foi concebido para elevar a narrativa visual de suas partidas de Magic.",
+        "category": "MTG",
+        "price": "R$70.00"
+    },
+        {
+        "id": "p17",
+        "name": "A coleção definitiva",
+        "images": "imagens/p17/1.webp,imagens/p17/2.webp,imagens/p17/3.webp",
+        "desc": "Cada peça é uma obra de arte em miniatura concebida para personificar o poder em campo. Com ilustrações de alto acabamento e alta fidelidade, este conjunto transforma cada fase de combate em um capítulo memorável de sua própria saga.",
+        "category": "MTG",
+        "price": "R$70.00"
+    },
+        {
+        "id": "p18",
+        "name": "Deck Box - Pântano",
+        "images": "imagens/p18/1.webp,imagens/p18/2.webp,imagens/p18/3.webp",
+        "desc": "Uma extensão da própria terra corrompida. Esta deck box, com acabamento em preto profundo e detalhes que mimetizam as texturas orgânicas e inquietantes do pântano, é o santuário ideal para quem domina a magia do sacrifício e da morte.",
+        "category": "MTG",
+        "price": "R$70.00"
+    },
+    {
+        "id": "p19",
+        "name": "Deck Box - Planície",
+        "images": "imagens/p19/1.webp,imagens/p19/2.webp,imagens/p19/3.webp",
+        "desc": "Uma extensão da própria terra sob a luz do sol. Esta deck box, com acabamento em branco alvo e detalhes que mimetizam o solo árido e as fendas das planícies castigadas, é o santuário ideal para quem domina a magia da ordem e da proteção.",
+        "category": "MTG",
+        "price": "R$70.00"
+    },
+    {
+        "id": "p20",
+        "name": "Deck Box - Montanha",
+        "images": "imagens/p20/1.webp,imagens/p20/2.webp,imagens/p20/3.webp",
+        "desc": "Uma extensão da própria terra indomável. Esta deck box, com acabamento em vermelho ardente e detalhes que mimetizam as texturas angulares e agressivas dos picos vulcânicos, é o santuário ideal para quem domina a magia do caos e da velocidade.",
+        "category": "MTG",
+        "price": "R$70.00"
+    },
+    {
+        "id": "p21",
+        "name": "Deck Box - Floresta",
+        "images": "imagens/p21/1.webp,imagens/p21/2.webp,imagens/p21/3.webp",
+        "desc": "Uma extensão da própria terra em crescimento. Esta deck box, com acabamento em verde profundo e detalhes que mimetizam as texturas orgânicas e sinuosas das raízes ancestrais, é o santuário ideal para quem domina a magia do crescimento e da força bruta.",
+        "category": "MTG",
+        "price": "R$70.00"
+    },
+    {
+        "id": "p22",
+        "name": "Deck Box - Ilha",
+        "images": "imagens/p22/1.webp,imagens/p22/2.webp,imagens/p22/3.webp",
+        "desc": "Uma extensão da própria terra submersa. Esta deck box, com acabamento em azul oceânico e detalhes que mimetizam as texturas fluidas e inconstantes das ondas, é o santuário ideal para quem domina a magia do intelecto e do controle.",
+        "category": "MTG",
+        "price": "R$70.00"
     }
 ]
