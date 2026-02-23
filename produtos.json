@@ -125,7 +125,7 @@
         "images": "imagens/p16/1.webp,imagens/p16/2.webp,imagens/p16/3.webp",
         "desc": "Estas dezesseis fichas exclusivas são fragmentos de um mundo onde o pequeno se torna heróico. Com ilustrações que dão vida a criaturas clássicas e aos novos protagonistas de Bloomburrow, cada token foi concebido para elevar a narrativa visual de suas partidas de Magic.",
         "category": "MTG",
-        "price": "R$70.00"
+        "price": "R$2.50 a unidade"
     },
         {
         "id": "p17",
@@ -133,7 +133,7 @@
         "images": "imagens/p17/1.webp,imagens/p17/2.webp,imagens/p17/3.webp",
         "desc": "Cada peça é uma obra de arte em miniatura concebida para personificar o poder em campo. Com ilustrações de alto acabamento e alta fidelidade, este conjunto transforma cada fase de combate em um capítulo memorável de sua própria saga.",
         "category": "MTG",
-        "price": "R$70.00"
+        "price": "R$2.50 a unidade"
     },
         {
         "id": "p18",
@@ -172,6 +172,38 @@
         "name": "Deck Box - Ilha",
         "images": "imagens/p22/1.webp,imagens/p22/2.webp,imagens/p22/3.webp",
         "desc": "Uma extensão da própria terra submersa. Esta deck box, com acabamento em azul oceânico e detalhes que mimetizam as texturas fluidas e inconstantes das ondas, é o santuário ideal para quem domina a magia do intelecto e do controle.",
+        "category": "MTG",
+        "price": "R$70.00"
+    },
+        {
+        "id": "p23",
+        "name": "Separadores Absoluto",
+        "images": "imagens/p23/1.webp,imagens/p23/2.webp,imagens/p23/3.webp",
+        "desc": "Esta série de quarenta e quatro divisores oferece uma estrutura completa para a segmentação de decks, abrangendo as cinco cores de mana, as dez combinações binárias, além de categorias para mana incolor e multicor. O sistema estende-se à classificação dos tipos de cartas, raridades e curvas de custo de mana.",
+        "category": "MTG",
+        "price": "R$70.00"
+    }, 
+    {
+        "id": "p24",
+        "name": "Arquivo Absoluto",
+        "images": "imagens/p24/1.webp,imagens/p24/2.webp,imagens/p24/3.webp",
+        "desc": "A organização torna-se uma extensão do seu grimório com esta caixa, que comporta entre 500 a 600 cartas sem shields. Ela é feita para funcionar com os separadores de carta que oferecemos, permitindo uma organização personalizada e eficiente, garantindo que cada carta esteja em seu devido lugar.",
+        "category": "MTG",
+        "price": "R$70.00"
+    },
+    {
+        "id": "p25",
+        "name": "O Sistema Absoluto de Organização",
+        "images": "imagens/p25/1.webp,imagens/p25/2.webp,imagens/p25/3.webp",
+        "desc": "Esta solução definitiva une a robustez do Arquivo Absoluto à versatilidade dos quarenta e quatro Separadores Absolutos, criando um ecossistema onde cada carta, da curva de mana às combinações de cores mais complexas, encontra seu lugar de direito. É a ferramenta indispensável para o jogador que não aceita menos que a perfeição.",
+        "category": "MTG",
+        "price": "R$70.00"
+    },
+        {
+        "id": "p26",
+        "name": "Contador de Poder",
+        "images": "imagens/p26/1.webp,imagens/p26/2.webp,imagens/p26/3.webp",
+        "desc": "Ás vezes o destino de uma partida repousa sobre o rastro de poder das suas criaturas. Com um ajuste tátil e preciso que transita entre o bônus de +5/+5 e o declínio de -5/-5, ele elimina as incertezas da mesa, permitindo que você foque apenas na execução do seu próximo golpe mestre.",
         "category": "MTG",
         "price": "R$70.00"
     }
