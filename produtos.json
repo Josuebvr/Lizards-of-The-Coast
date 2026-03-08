@@ -5,7 +5,7 @@
         "images": "imagens/p01/1.png,imagens/p01/2.png,imagens/p01/3.png",
         "desc": "Mais que uma caixa, um item de exposição. Com acabamento premium e fechamento magnético seguro, este grimório guarda seu deck e acessórios com a elegância que um grande estrategista exige. Sua partida começa antes mesmo da primeira carta ser comprada.",
         "category": "MTG",
-        "price": "R$200.00"
+        "price": "R$150.00"
     },
     {
         "id": "p02",
@@ -21,7 +21,7 @@
         "images": "imagens/p03/1.png,imagens/p03/2.png,imagens/p03/3.png",
         "desc": "Mais que uma Deck box, um verdadeiro altar para o seu commander. Além do visor frontal que coloca sua carta comandante em evidência, também possui um compartimento lateral para tokens, dados e contadores de vida. Personalizável em cores e simbolos de mana únicas ou mesclas híbridas.",
         "category": "MTG",
-        "price": "R$90.00"
+        "price": "R$70.00"
     },
     {
         "id": "p04",
@@ -37,7 +37,7 @@
         "images": "imagens/p05/1.png,imagens/p05/2.png,imagens/p05/3.png",
         "desc": "Estas peças são o símbolo de conquistas épicas em sua aventura. Cada moeda traz o brilho necessário para representar fortunas acumuladas ou recompensas lendárias no centro da mesa. Sinta o relevo detalhado de um artefato que transforma sua seção de RPG em um momento de pura glória visual.",
         "category": "RPG",
-        "price": "R$3.00 a unidade"
+        "price": "R$2.00 a unidade"
     },
     {
         "id": "p06",
@@ -45,7 +45,7 @@
         "images": "imagens/p06/1.png,imagens/p06/2.png,imagens/p06/3.png",
         "desc": "Uma Deck Box que aposta na simplicidade para entregar uma proteção absoluta e eficaz. Com encaixe preciso e estrutura otimizada, é o item de exposição ideal para o jogador que exige funcionalidade impecável e a elegância de um design limpo.",
         "category": "MTG",
-        "price": "R$30.00"
+        "price": "R$25.00"
     },
     {
         "id": "p07",
@@ -53,7 +53,7 @@
         "images": "imagens/p07/1.png,imagens/p07/2.png,imagens/p07/3.png",
         "desc": "Com detalhes esculpidos sob o brilho do ouro, esta peça simboliza a promessa e a aliança indissolúvel de Deus. É o ícone definitivo para quem deseja materializar a majestade bíblica.",
         "category": "decoracoes",
-        "price": "R$70.00"
+        "price": "R$50.00"
     },
     {
         "id": "p08",
@@ -61,7 +61,7 @@
         "images": "imagens/p08/1.png,imagens/p08/2.png,imagens/p08/3.png",
         "desc": "Um tributo à arte do Ninjutsu. Esta Deck Box exclusiva, estampada com a face implacável de Satoru Umezawa, possui um visor frontal que exibe sua carta de comandante e um fechamento magnético.",
         "category": "MTG",
-        "price": "R$70.00"
+        "price": "R$40.00"
     },
         {
         "id": "p09",
@@ -69,7 +69,7 @@
         "images": "imagens/p09/1.png,imagens/p09/2.png,imagens/p09/3.png",
         "desc": "Uma janela para uma galáxia muito distante que repousa diretamente em sua estante. Este nicho decorativo captura a essência da Millennium Falcon, criando um efeito de profundidade hipnotizante entre seus livros favoritos. É a peça de exposição definitiva para o leitor de ficção científica.",
         "category": "decoracoes",
-        "price": "R$70.00"
+        "price": "R$100.00"
     },
         {
         "id": "p10",
@@ -77,7 +77,7 @@
         "images": "imagens/p10/1.png,imagens/p10/2.png,imagens/p10/3.png",
         "desc": "Este kit destacável permite que você monte seu próprio esqueleto de Tiranossauro. Ao apagar das luzes, o grande Tyrannosaurus rex revela sua natureza luminescente, emitindo um brilho que torna qualquer ambiente mais divertido.",
         "category": "decoracoes",
-        "price": "R$70.00"
+        "price": "R$10.00"
     },
         {
         "id": "p11",
@@ -85,7 +85,7 @@
         "images": "imagens/p11/1.png,imagens/p11/2.png,imagens/p11/3.png",
         "desc": "Projetado com encaixe milimétrico para o controle de Xbox, ele garante que seu controle esteja sempre pronto, elevando a estética do seu setup ao nível profissional.",
         "category": "decoracoes",
-        "price": "R$70.00"
+        "price": "R$15.00"
     },
         {
         "id": "p12",
@@ -93,7 +93,7 @@
         "images": "imagens/p12/1.png,imagens/p12/2.png,imagens/p12/3.png",
         "desc": "Este quadro simboliza o olhar vigilante de Mordor, um símbolo de poder e vigilância que pode ser usado como peça decorativa ou como item de exposição para o jogador que deseja representar a autoridade do senhor sombrio.",
         "category": "decoracoes",
-        "price": "R$70.00"
+        "price": "R$15.00"
     },
     {
         "id": "p13",
@@ -101,15 +101,15 @@
         "images": "imagens/p13/1.png,imagens/p13/2.png,imagens/p13/3.png",
         "desc": "Esta Deck Box é uma proeza de design funcional que transforma o acesso ao seu deck em um ritual de maestria. Com uma tampa giratória e um expositor dedicado que coloca seu comandante em posição de honra, É a solução definitiva para o jogador que busca impacto visual.",
         "category": "MTG",
-        "price": "R$70.00"
+        "price": "R$50.00"
     },
         {
         "id": "p14",
         "name": "Deck Box - O Queijo",
         "images": "imagens/p14/1.png,imagens/p14/2.png,imagens/p14/3.png",
-        "desc": "Com um design que evoca a astúcia e a natureza implacável de Vren, o Implacável, este deckbox de queijo é o disfarce ideal para esconder o poder de uma horda crescente.",
+        "desc": "Com um design que evoca a natureza implacável de Vren, o Implacável, este deckbox de queijo é o disfarce ideal para esconder o poder de uma horda crescente.",
         "category": "MTG",
-        "price": "R$70.00"
+        "price": "R$30.00"
     },
         {
         "id": "p15",
@@ -117,7 +117,7 @@
         "images": "imagens/p15/1.png,imagens/p15/2.png,imagens/p15/3.png",
         "desc": "Com curvas fluidas e contínuas, este suporte para fones de ouvido protege a estrutura de seu equipamento enquanto o exibe como uma verdadeira obra de arte moderna. É o repouso ideal para o seu headset, oferecendo uma presença minimalista e sofisticada que transforma qualquer ambiente de trabalho",
         "category": "decoracoes",
-        "price": "R$70.00"
+        "price": "R$60.00"
     },
         {
         "id": "p16",
@@ -125,7 +125,7 @@
         "images": "imagens/p16/1.png,imagens/p16/2.png,imagens/p16/3.png",
         "desc": "Estas dezesseis fichas exclusivas são fragmentos de um mundo onde o pequeno se torna heróico. Com ilustrações que dão vida a criaturas clássicas e aos novos protagonistas de Bloomburrow, cada token foi concebido para elevar a narrativa visual de suas partidas de Magic.",
         "category": "MTG",
-        "price": "R$2.50 a unidade"
+        "price": "R$2.50 cada ficha"
     },
         {
         "id": "p17",
@@ -133,7 +133,7 @@
         "images": "imagens/p17/1.png,imagens/p17/2.png,imagens/p17/3.png",
         "desc": "Cada peça é uma obra de arte em miniatura concebida para personificar o poder em campo. Com ilustrações de alto acabamento e alta fidelidade, este conjunto transforma cada fase de combate em um capítulo memorável de sua própria saga.",
         "category": "MTG",
-        "price": "R$2.50 a unidade"
+        "price": "R$2.50 cada ficha"
     },
         {
         "id": "p18",
@@ -141,7 +141,7 @@
         "images": "imagens/p18/1.png,imagens/p18/2.png,imagens/p18/3.png",
         "desc": "Uma extensão da própria terra corrompida. Esta deck box, com acabamento em preto profundo e detalhes que mimetizam as texturas orgânicas e inquietantes do pântano, é o santuário ideal para quem domina a magia do sacrifício e da morte.",
         "category": "MTG",
-        "price": "R$70.00"
+        "price": "R$55.00"
     },
     {
         "id": "p19",
@@ -149,7 +149,7 @@
         "images": "imagens/p19/1.png,imagens/p19/2.png,imagens/p19/3.png",
         "desc": "Uma extensão da própria terra sob a luz do sol. Esta deck box, com acabamento em branco alvo e detalhes que mimetizam o solo árido e as fendas das planícies castigadas, é o santuário ideal para quem domina a magia da ordem e da proteção.",
         "category": "MTG",
-        "price": "R$70.00"
+        "price": "R$55.00"
     },
     {
         "id": "p20",
@@ -157,7 +157,7 @@
         "images": "imagens/p20/1.png,imagens/p20/2.png,imagens/p20/3.png",
         "desc": "Uma extensão da própria terra indomável. Esta deck box, com acabamento em vermelho ardente e detalhes que mimetizam as texturas angulares e agressivas dos picos vulcânicos, é o santuário ideal para quem domina a magia do caos e da velocidade.",
         "category": "MTG",
-        "price": "R$70.00"
+        "price": "R$55.00"
     },
     {
         "id": "p21",
@@ -165,7 +165,7 @@
         "images": "imagens/p21/1.png,imagens/p21/2.png,imagens/p21/3.png",
         "desc": "Uma extensão da própria terra em crescimento. Esta deck box, com acabamento em verde profundo e detalhes que mimetizam as texturas orgânicas e sinuosas das raízes ancestrais, é o santuário ideal para quem domina a magia do crescimento e da força bruta.",
         "category": "MTG",
-        "price": "R$70.00"
+        "price": "R$55.00"
     },
     {
         "id": "p22",
@@ -173,7 +173,7 @@
         "images": "imagens/p22/1.png,imagens/p22/2.png,imagens/p22/3.png",
         "desc": "Uma extensão da própria terra submersa. Esta deck box, com acabamento em azul oceânico e detalhes que mimetizam as texturas fluidas e inconstantes das ondas, é o santuário ideal para quem domina a magia do intelecto e do controle.",
         "category": "MTG",
-        "price": "R$70.00"
+        "price": "R$55.00"
     },
         {
         "id": "p23",
@@ -181,7 +181,7 @@
         "images": "imagens/p23/1.png,imagens/p23/2.png,imagens/p23/3.png",
         "desc": "Esta série de quarenta e quatro divisores oferece uma estrutura completa para a segmentação de decks, abrangendo as cinco cores de mana, as dez combinações binárias, além de categorias para mana incolor e multicor. O sistema estende-se à classificação dos tipos de cartas, raridades e curvas de custo de mana.",
         "category": "MTG",
-        "price": "R$70.00"
+        "price": "R$5.00 cada separador colorido, R$2.50 cada separador preto e branco"
     }, 
     {
         "id": "p24",
@@ -189,7 +189,7 @@
         "images": "imagens/p24/1.png,imagens/p24/2.png,imagens/p24/3.png",
         "desc": "A organização torna-se uma extensão do seu grimório com esta caixa, que comporta entre 500 a 600 cartas sem shields. Ela é feita para funcionar com os separadores de carta que oferecemos, permitindo uma organização personalizada e eficiente, garantindo que cada carta esteja em seu devido lugar.",
         "category": "MTG",
-        "price": "R$70.00"
+        "price": "R$60.00"
     },
     {
         "id": "p25",
@@ -197,7 +197,7 @@
         "images": "imagens/p25/1.png,imagens/p25/2.png,imagens/p25/3.png",
         "desc": "Esta solução definitiva une a robustez do Arquivo Absoluto à versatilidade dos quarenta e quatro Separadores Absolutos, criando um ecossistema onde cada carta, da curva de mana às combinações de cores mais complexas, encontra seu lugar de direito. É a ferramenta indispensável para o jogador que não aceita menos que a perfeição.",
         "category": "MTG",
-        "price": "R$70.00"
+        "price": "R$200.00"
     },
         {
         "id": "p26",
@@ -205,6 +205,6 @@
         "images": "imagens/p26/1.png,imagens/p26/2.png,imagens/p26/3.png",
         "desc": "Ás vezes o destino de uma partida repousa sobre o rastro de poder das suas criaturas. Com um ajuste tátil e preciso que transita entre o bônus de +5/+5 e o declínio de -5/-5, ele elimina as incertezas da mesa, permitindo que você foque apenas na execução do seu próximo golpe mestre.",
         "category": "MTG",
-        "price": "R$70.00"
+        "price": "R$2.00 a unidade"
     }
 ]
